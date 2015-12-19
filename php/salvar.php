@@ -2,14 +2,14 @@
 
 if (isset ( $_POST ['message'] )) {
 
-	uf          = $_POST ['uf'];
-	rua         = $_POST ['rua'];
-	cep         = $_POST ['cep'];
-	nome        = $_POST ['nome'];
-	email       = $_POST ['email'];
-	cidade      = $_POST ['cidade'];
-	bairro      = $_POST ['bairro'];
-	complemento = $_POST ['complemento'];
+	$uf          = $_POST ['uf'];
+	$rua         = $_POST ['rua'];
+	$cep         = $_POST ['cep'];
+	$nome        = $_POST ['nome'];
+	$email       = $_POST ['email'];
+	$cidade      = $_POST ['cidade'];
+	$bairro      = $_POST ['bairro'];
+	$complemento = $_POST ['complemento'];
 
 
 
@@ -20,7 +20,7 @@ if (isset ( $_POST ['message'] )) {
 
 	$headers = 'From: ' . $email . "\r\n" . 'Reply-To: ' . $email . "\r\n" . 'X-Mailer: PHP/' . phpversion ();
 
-	$status = mail ( $to, $subject, $message, $headers );
+	$status = mail ( $to, $subject, $nome, $headers );
 
 	if ($status == TRUE) {
 		$res ['sendstatus'] = 'done';
