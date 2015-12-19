@@ -1,0 +1,55 @@
+/* your styles go here */
+
+.navbar {
+    background-color: #f2f2f2;
+
+}
+
+#comoFunciona {
+    border-bottom: #202020;
+    border-color: #575757;
+    border-style: solid;
+    border-width: 13px 0px 0px 0px
+}
+
+.formContainer {
+    /*border-style: solid;
+    border-color: #00aced;
+    border-radius: 25px;
+    */
+}
+
+.btn-default {
+    color: #FFF;
+    background-color: #202020;
+    border-color: #ccc;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #1AAA9B;
+    background-color: transparent;
+}
+
+#intro .item h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #000;
+    margin-bottom: 40px;
+    font-weight: 900;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-backface-visibility: hidden;
+}
+
+#intro i {
+    color: rgba(255, 150, 0, 0.74);
+
+}
+
+.form-control-feedback {
+    width: 50px;
+}
+
