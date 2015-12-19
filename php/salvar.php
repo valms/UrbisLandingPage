@@ -1,6 +1,6 @@
 <?php
 
-if (isset ( $_POST ['message'] )) {
+if (isset ( $_POST ['nome'] )) {
 
 	$uf          = $_POST ['uf'];
 	$rua         = $_POST ['rua'];
@@ -10,6 +10,8 @@ if (isset ( $_POST ['message'] )) {
 	$cidade      = $_POST ['cidade'];
 	$bairro      = $_POST ['bairro'];
 	$complemento = $_POST ['complemento'];
+
+	echo $uf;
 
 
 
