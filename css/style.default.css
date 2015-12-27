@@ -31,7 +31,7 @@ Barra de Navegação
 }
 
 .navbar ul.nav > li > a:hover {
-    border-top: solid 3px #F0592A;
+    border-top: solid 3px #1BAA9C;
 }
 
 @media (max-width: 767px) {
@@ -953,7 +953,6 @@ strong {
 
 .navbar-default {
     background-color: transparent;
-    background: transparent;
     border-color: transparent;
 }
 

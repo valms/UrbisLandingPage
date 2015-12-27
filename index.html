@@ -20,15 +20,16 @@
     <meta name="keywords" content="Urbis Cartão Exclusividades Descontos">
 
 
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/bootstrap-dialog.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Gabriela' rel='stylesheet' type='text/css'>
     <link href="css/font-awesome.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/owl.carousel.css" rel="stylesheet">
     <link href="css/owl.theme.css" rel="stylesheet">
     <link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet">
     <link href="css/custom.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/bootstrap-dialog.css" rel="stylesheet">
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.png">
@@ -56,9 +57,12 @@
 
 
 <div id="all">
+    <div id="preloader">
+        <div id="status"></div>
+    </div>
     <!-- *** MENU ***  -->
 
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
+    <div class="navbar navbar-fixed-bottom" role="navigation" id="navbar">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -67,61 +71,66 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="#intro"><img src="img/rsz_logo.png" href="#intro" class="img-responsive"></a>
+                <a href="#intro">
+                    <img src="img/logo.png" width="350px" height="57px" href="#intro" class="img-responsive"/>
+                </a>
             </div>
 
             <div class="navbar-collapse collapse" id="navigation">
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#intro">HOME</a>
+                    <li class="active"><a href="#intro">inscreva-se</a>
                     </li>
-                    <li><a href="#comoFunciona">URBIS</a>
+                    <li><a href="#comoFunciona">como funciona</a>
                     </li>
-                    <!-- <li><a href="#sobre">SOBRE NÓS</a>
-                  </li>r -->
-                    <li><a href="#contato">FALE CONOSCO</a>
+                    <li><a href="#footer">Contato</a>
                     </li>
-                    <li><a href="#">donos de estabelecimento</a>
-                    </li>
+
 
                 </ul>
             </div>
 
         </div>
     </div>
-    <!-- /#navbar -->
-
     <!-- *** Fim Menu *** -->
 
 
     <!-- *** Seção 01 - Intro da LP ***-->
-    <div id="intro" class="clearfix fa-sort-amount-desc">
+    <div id="intro" class="fa-sort-amount-desc">
         <div class="item">
             <div class="container">
                 <div class="row">
                     <h1 data-animate="fadeInDown">Uma metrópole inteira de exclusividades!</h1>
                 </div>
-                <div class="row">
-                    <div class="col-lg-6 embed-responsive embed-responsive-16by9    ">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/sGbxmsDFVnE" frameborder="0"
-                                allowfullscreen>
 
+                <div class="row">
+                    <div class="col-lg-7"></div>
+                    <div class="col-lg-5">
+                        <div class="col-lg-3"><a href="#" id="ativarCliente"><img src="img/clientes-label.png"/></a>
+                        </div>
+                        <div class="col-lg-3"><a href="#" id="ativarParceiro"><img src="img/parceiros-label.png"/></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-7">
+                        <iframe class="" src="https://www.youtube.com/embed/sGbxmsDFVnE" frameborder="0"
+                                width="300px" height="300px" allowfullscreen>
                         </iframe>
                     </div>
 
-                    <div class="col-lg-6">
+                    <div class="col-lg-5 formContainerCliente">
+                        <div class="row"><br></div>
 
-
-                        <form id="inscricaoForm" data-toggle="validator" role="form">
-
-                            <div class="row ">
-                                <div class="ajax-response"></div>
-                            </div>
+                        <form id="inscricaoClienteForm" class="inscricaoClienteForm" data-toggle="validator"
+                              role="form">
 
                             <div class="ajax-hidden">
                                 <div class="row ">
                                     <div class="form-group col-lg-12 has-feedback">
-                                        <input data-animate="fadeInDown" type="text" id="c_name" class="form-control"
+                                        <input data-animate="fadeInDown" type="text" id="c_name"
+                                               class="form-control"
                                                name="c_name" placeholder="Nome" required/>
                                         <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                                         <span class="help-block with-errors"></span>
@@ -131,16 +140,26 @@
                                     <div class="col-lg-6">
                                         <div class="form-group has-feedback">
                                             <input data-animate="fadeInDown" type="text" id="c_cep"
-                                                   class="form-control cep" name="c_cep" placeholder="C.E.P" required/>
-                                            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                                   class="form-control cep" name="c_cep" placeholder="C.E.P"
+                                                   required/>
+                                                    <span class="glyphicon form-control-feedback"
+                                                          aria-hidden="true"></span>
                                             <span class="help-block with-errors"></span>
 
                                         </div>
                                     </div>
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-3">
                                         <div class="form-group">
-                                            <input data-animate="fadeInDown" type="text" id="c_rua" class="form-control"
+                                            <input data-animate="fadeInDown" type="text" id="c_rua"
+                                                   class="form-control"
                                                    name="c_rua" placeholder="Rua" disabled/>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="form-group">
+                                            <input data-animate="fadeInDown" type="text" id="c_numero"
+                                                   class="form-control"
+                                                   name="c_numero" placeholder="Nº"/>
                                         </div>
                                     </div>
                                 </div>
@@ -182,24 +201,33 @@
 
                                 <div class="row ">
                                     <div class="form-group col-lg-12">
-                                        <input data-animate="fadeInDown" type="email" id="c_email" class="form-control"
+                                        <input data-animate="fadeInDown" type="email" id="c_email"
+                                               class="form-control"
                                                name="c_email" placeholder="Email"
                                                data-error="Email Inválido" required/>
 
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
-
-
                             </div>
 
 
-                            <button class="btn btn-block btn-default" id="submitButton" type="submit">HABITE URBIS!</button>
-                            <div class="row "></div>
+                            <button class="btn btn-block btn-default" id="submitButton" type="submit">HABITE
+                                URBIS!
+                            </button>
+                            <div class="row"><br></div>
 
                         </form>
                     </div>
                 </div>
+            </div>
+
+            <div class="scroll-down">
+                <a href="#comoFunciona">
+                <span>
+                    <i class="fa fa-angle-down fa-2x"></i>
+			    </span>
+                </a>
             </div>
         </div>
     </div>
@@ -210,103 +238,56 @@
     <div class="section" id="comoFunciona">
         <div class="container">
             <div class="col-md-12">
-                <h2 class="title" data-animate="fadeInDown">URBIS</h2>
+                <br><br><br>
 
-                <p class="lead">É SIMPLES UTILIZAR SUA EXCLUSIVIDADE URBIS, CONFIRA E APROVEITE</p>
+                <h2 class="title" data-animate="fadeInDown">Como Funciona</h2>
+
+                <p class="lead" data-animate="fadeInDown">É SIMPLES UTILIZAR SUA EXCLUSIVIDADE URBIS, CONFIRA E
+                    APROVEITE</p>
 
                 <div class="row services">
 
-                    <div class="col-md-3" data-animate="fadeInUp">
-                        <img src="img/URBI-SE.png" href="#intro" class="img-responsive"/>
+                    <div class="col-md-3"
+
+                         data-animate="fadeInUp">
+                        <img src="img/URBI-SE.png"
+                             style="border-color: #9b9b9b; border-style: solid; border-width: 0px 01px 0px 0px;"
+                             href="#intro" class="img-responsive"/>
 
                         <h3 class="heading">Urbi-se</h3>
-
-                        <p></p>
                     </div>
 
+
                     <div class="col-md-3" data-animate="fadeInUp">
-                        <img src="img/EXPLORE.png" href="#intro" class="img-responsive"/>
+                        <img src="img/EXPLORE.png" href="#intro"
+                             style="border-color: #9b9b9b; border-style: solid; border-width: 0px 01px 0px 0px;"
+                             class="img-responsive"/>
 
                         <h3 class="heading">Explore os Melhores</h3>
-
-                        <p></p>
                     </div>
 
+
                     <div class="col-md-3" data-animate="fadeInUp">
-                        <img src="img/APRESENTE-O-CARTAO.png" href="#intro" class="img-responsive"/>
+                        <img src="img/APRESENTE-O-CARTAO.png" href="#intro" class="img-responsive"
+                             style="border-color: #9b9b9b; border-style: solid; border-right-width: 10px;
+                              border-width: 0px 01px 0px 0px;"/>
 
-                        <h3 class="heading">Apresente seu Cartão de exclusividades nos estabelecimento parceiros</h3>
-
-                        <p></p>
+                        <h3 class="heading">Apresente seu Cartão de exclusividades nos estabelecimento
+                            parceiros</h3>
                     </div>
 
                     <div class="col-md-3" data-animate="fadeInUp">
                         <img src="img/DESFRUTE.png" href="#intro" class="img-responsive"/>
 
                         <h3 class="heading">Desfrute dos Urbis</h3>
-
-                        <p></p>
                     </div>
                 </div>
-
-
             </div>
-            <!-- /.12 -->
         </div>
-        <!-- /.container -->
     </div>
-    <!-- /.section -->
 
     <!-- *** Fim da Seção 02 - Explicação Sobre Urbis *** -->
 
-
-    <!-- *** Seção 03 - Sobre *** -->
-    <!--
-    <div class="section text-gray" id="sobre">
-        <div class="container">
-            <div class="col-md-12">
-                <h2 class="title" data-animate="fadeInDown">URBIS</h2>
-
-                <p class="lead"></p>
-
-
-
-
-            </div>
-
-        </div>
-
-    </div>-->
-    <!-- /.section -->
-
-    <!-- *** Fim da Seção 03 - Sobre *** -->
-
-
-    <!-- ***  Seção 04 - Contato ***  -->
-
-    <div class="section  text-gray" id="contato">
-        <div class="container">
-            <div class="col-md-8 col-md-offset-2">
-
-
-                <h2 class="title" data-animate="fadeInDown">Contato</h2>
-
-                <p class="lead margin-bottom" data-animate="fadeInUp"></p>
-
-
-                <ul class="list-unstyled text-large text-thin" data-animate="fadeInUp">
-                    <li><strong>E-mail:</strong> contato@cartaourbis.com.br</li>
-                    <li><strong>Telefone:</strong> +55 85 1234 5678</li>
-                </ul>
-
-            </div>
-            <!-- /.12 -->
-        </div>
-        <!-- /.container -->
-    </div>
-    <!-- /.section -->
-
-    <!-- *** Fim da Seção 04 - Contao *** -->
 
     <!-- *** Footer ***  -->
 
@@ -316,29 +297,26 @@
             <div class="row">
 
                 <div class="col-sm-6">
-                    <a href="#intro"> <img src="img/rsz_logo.png" href="#intro" class="img-responsive"></a>
+                    <a href="#intro"> <img src="img/logo-bottom.png" width="216px" height="57px" href="#intro"
+                                           class="img-responsive"></a>
 
                 </div>
                 <!-- /.6 -->
 
                 <div class="col-sm-4">
-                    <p class="social">
-                        <a href="#" class="external facebook" data-animate-hover="shake" data-animate="fadeInUp"><i
-                                class="fa fa-facebook"></i></a>
-                        <a href="#" class="external instagram" data-animate-hover="shake" data-animate="fadeInUp"><i
+                    <p class="social" data-animate="fadeInDown">
+                        contato@cartaourbis.com.br
+
+                        <a href="#" class="external facebook" data-animate-hover="swing" data-animate="fadeInUp"><i
+                                class="fa fa-facebook-square"></i></a>
+                        <a href="#" class="external instagram" data-animate-hover="swing" data-animate="fadeInUp"><i
                                 class="fa fa-instagram"></i></a>
-                        <a href="#" class="external twitter" data-animate-hover="shake" data-animate="fadeInUp"><i
-                                class="fa fa-twitter"></i></a>
-                        <a href="mailto:#" class="email" data-animate-hover="shake" data-animate="fadeInUp"><i
-                                class="fa fa-envelope"></i></a>
-                        &nbsp; &copy; 2015 Urbis.
+                        <br>&nbsp; &copy; 2015 Urbis.
                     </p>
-
-                    <p></p>
-
                 </div>
 
             </div>
+
 
         </div>
         <!-- /.container -->
@@ -359,6 +337,7 @@
 <script src="js/waypoints.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/jquery.scrollTo.min.js"></script>
+<script src="js/wow.min.js"></script>
 <script src="js/front.js"></script>
 <script src="js/custom.js"></script>
 

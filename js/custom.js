@@ -2,6 +2,42 @@
  * Created by Valmar Júnior on 07/12/2015.
  */
 
+
+/* ---------------------------------------------- /*
+ * Preloader
+ /* ---------------------------------------------- */
+
+$(window).load(function () {
+    $('#status').fadeOut();
+    $('#preloader').delay(300).fadeOut('slow');
+});
+
+(function ($) {
+    $('a[href*=#]').bind("click", function (e) {
+
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 1000);
+        e.preventDefault();
+    });
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scroll-up').fadeIn();
+        } else {
+            $('.scroll-up').fadeOut();
+        }
+    });
+
+
+})(jQuery);
+
+
+
+
+
+
 //################################### Mascaras #################################################
 //################################### Mascaras #################################################
 //################################### Mascaras #################################################
@@ -72,6 +108,7 @@ function limpa_formulario_cep() {
     $("#c_cidade").val("");
     $("#c_uf").val("");
     $("#c_cep").val("");
+    $("#c_numero").val("")
 
 }
 
@@ -94,7 +131,7 @@ $('#inscricaoForm').on('status.field.bv', function (e, data) {
     }
 });
 
-$('#inscricaoForm').submit(function (e) {
+$('#inscricaoClienteForm').submit(function (e) {
 
 
     e.preventDefault();
@@ -107,12 +144,15 @@ $('#inscricaoForm').submit(function (e) {
     var c_uf = $('#c_uf').val();
     var c_cidade = $('#c_cidade').val();
     var c_email = $('#c_email').val();
+    var c_numero = $('#c_numero').val();
+
     var response = $('#inscricaoForm .ajax-response');
 
     var formData = {
         'nome': c_name,
         'cep': c_cep,
         'rua': c_rua,
+        'numero': c_numero,
         'bairro': c_bairro,
         'complemento': c_complemento,
         'uf': c_uf,
@@ -140,7 +180,7 @@ $('#inscricaoForm').submit(function (e) {
     } else {
         $.ajax({
             type: 'POST',
-            url: 'php/salvar.php',
+            url: 'php/salvarCliente.php',
             data: formData,
             dataType: 'json',
             encode: true,
@@ -160,6 +200,7 @@ $('#inscricaoForm').submit(function (e) {
         document.getElementById("c_cep").disabled = true;
         document.getElementById("c_email").disabled = true;
         document.getElementById("c_complemento").disabled = true;
+        document.getElementById("c_numero").disabled = true;
         document.getElementById("submitButton").disabled = true;
 
     }

@@ -1,22 +1,36 @@
-/* your styles go here */
-
-.navbar {
+.navbar, navbar-default {
     background-color: #f2f2f2;
+    margin-bottom: 0px;
 
 }
 
-#comoFunciona {
-    border-bottom: #202020;
-    border-color: #575757;
+.divForm {
     border-style: solid;
-    border-width: 13px 0px 0px 0px
+    border-color: #1BAA9C;
+    border-radius: 25px;
+    margin-right: 10px;
+
 }
 
-.formContainer {
-    /*border-style: solid;
-    border-color: #00aced;
-    border-radius: 25px;
-    */
+.linhaDivisoria {
+    background: rgba(135, 135, 135, 0.5);
+    width: 1px;
+    height: 400px;
+    /* margin: 30px auto; */
+}
+
+.formContainerCliente {
+    border-style: solid;
+    border-color: #1baa9c;
+    border-radius: 10px;
+    border-width: 2px 2px 2px 2px;
+}
+
+.formContainerParceiro {
+    border-style: solid;
+    border-color: #d8e02a;
+    border-radius: 10px;
+    border-width: 0px 1px 1px 1px;
 }
 
 .btn-default {
@@ -32,16 +46,26 @@
     background-color: transparent;
 }
 
+/* ---------------------------------------------- /*
+ *  Intro
+/* ---------------------------------------------- */
+
 #intro .item h1 {
-    font-size: 40px;
+    margin-top: -50px;
+    font-size: 28px;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
     color: #000;
     margin-bottom: 40px;
-    font-weight: 900;
     opacity: 0;
-    filter: alpha(opacity=0);
-    -webkit-backface-visibility: hidden;
+    box-shadow: none;
+}
+
+#intro form {
+    margin-left: 10px;
+}
+
+#intro .item {
+    text-shadow: none;
 }
 
 #intro i {
@@ -49,7 +73,101 @@
 
 }
 
+#footer p.social {
+    text-align: center;
+}
+
+/* ---------------------------------------------- /*
+ *Scroll Down
+/* ---------------------------------------------- */
+
+.scroll-down {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-left: -15px;
+    display: block;
+    z-index: 10;
+    text-align: center;
+}
+
+.scroll-down span {
+    position: relative;
+    color: #fff;
+    -webkit-animation-name: drop;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+    animation-name: drop;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+@-webkit-keyframes drop {
+    0% {
+        top: 0px;
+        opacity: 0;
+    }
+    30% {
+        top: 10px;
+        opacity: 1;
+    }
+    100% {
+        top: 25px;
+        opacity: 0;
+    }
+}
+
+@keyframes drop {
+    0% {
+        top: 0px;
+        opacity: 0;
+    }
+    30% {
+        top: 10px;
+        opacity: 1;
+    }
+    100% {
+        top: 25px;
+        opacity: 0;
+    }
+}
+
 .form-control-feedback {
     width: 50px;
 }
 
+/* ---------------------------------------------- /*
+ * Preloader
+/* ---------------------------------------------- */
+
+#preloader {
+    background: #FFF;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+#status {
+    background-image: url(../img/preloader.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    left: 50%;
+    margin: -100px 0 0 -100px;
+    position: absolute;
+    top: 50%;
+    width: 200px;
+}
