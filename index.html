@@ -60,9 +60,9 @@
     <div id="preloader">
         <div id="status"></div>
     </div>
-    <!-- *** MENU ***  -->
 
-    <div class="navbar navbar-fixed-bottom" role="navigation" id="navbar">
+    <!-- *** MENU ***  -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -96,7 +96,7 @@
 
 
     <!-- *** Seção 01 - Intro da LP ***-->
-    <div id="intro" class="fa-sort-amount-desc">
+    <div id="intro" class="clearfix">
         <div class="item">
             <div class="container">
                 <div class="row">
@@ -106,21 +106,29 @@
                 <div class="row">
                     <div class="col-lg-7"></div>
                     <div class="col-lg-5">
-                        <div class="col-lg-3"><a href="#" id="ativarCliente"><img src="img/clientes-label.png"/></a>
+                        <div class="col-lg-3">
+                            <button class="btn btn-link" id="buttonCliente">
+                                <img src="img/clientes-label.png"/>
+                            </button>
                         </div>
-                        <div class="col-lg-3"><a href="#" id="ativarParceiro"><img src="img/parceiros-label.png"/></a>
+                        <div class="col-lg-3">
+                            <button class="btn btn-link" id="buttonParceiro">
+                                <img src="img/parceiros-label.png"/>
+                            </button>
                         </div>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-lg-7">
-                        <iframe class="" src="https://www.youtube.com/embed/sGbxmsDFVnE" frameborder="0"
-                                width="300px" height="300px" allowfullscreen>
-                        </iframe>
+                        <div class="vid">
+                            <iframe class="" src="https://www.youtube.com/embed/sGbxmsDFVnE" frameborder="0"
+                                    allowfullscreen>
+                            </iframe>
+                        </div>
                     </div>
 
-                    <div class="col-lg-5 formContainerCliente">
+                    <div class="col-lg-5 formContainerCliente" id="inscricaoClienteContainer">
                         <div class="row"><br></div>
 
                         <form id="inscricaoClienteForm" class="inscricaoClienteForm" data-toggle="validator"
@@ -210,19 +218,17 @@
                                     </div>
                                 </div>
                             </div>
-
-
-                            <button class="btn btn-block btn-default" id="submitButton" type="submit">HABITE
-                                URBIS!
+                            <button class="btn btn-block btn-default" id="submitButton" type="submit">HABITE URBIS!
                             </button>
-                            <div class="row"><br></div>
-
                         </form>
+
                     </div>
+
+
                 </div>
             </div>
 
-            <div class="scroll-down">
+            <div class="scroll-down" role="navigation">
                 <a href="#comoFunciona">
                 <span>
                     <i class="fa fa-angle-down fa-2x"></i>
@@ -254,7 +260,9 @@
                              style="border-color: #9b9b9b; border-style: solid; border-width: 0px 01px 0px 0px;"
                              href="#intro" class="img-responsive"/>
 
-                        <h3 class="heading">Urbi-se</h3>
+                        <h3 class="heading">Cadastre-se</h3>
+
+                        <p> Lorem inpsum Lorem inpsum Lorem inpsum Lorem inpsum </p>
                     </div>
 
 
@@ -263,7 +271,7 @@
                              style="border-color: #9b9b9b; border-style: solid; border-width: 0px 01px 0px 0px;"
                              class="img-responsive"/>
 
-                        <h3 class="heading">Explore os Melhores</h3>
+                        <h3 class="heading">Procure um estabelecimento parceiro mais próximo de você!</h3>
                     </div>
 
 
@@ -272,8 +280,7 @@
                              style="border-color: #9b9b9b; border-style: solid; border-right-width: 10px;
                               border-width: 0px 01px 0px 0px;"/>
 
-                        <h3 class="heading">Apresente seu Cartão de exclusividades nos estabelecimento
-                            parceiros</h3>
+                        <h3 class="heading">Apresente seu Cartão de exclusividades e comemore seu desconto!</h3>
                     </div>
 
                     <div class="col-md-3" data-animate="fadeInUp">
@@ -284,6 +291,7 @@
                 </div>
             </div>
         </div>
+        <br><br><br><br><br><br><br><br>
     </div>
 
     <!-- *** Fim da Seção 02 - Explicação Sobre Urbis *** -->
@@ -308,20 +316,16 @@
                         contato@cartaourbis.com.br
 
                         <a href="#" class="external facebook" data-animate-hover="swing" data-animate="fadeInUp"><i
-                                class="fa fa-facebook-square"></i></a>
+                                class="fa fa-facebook"></i></a>
                         <a href="#" class="external instagram" data-animate-hover="swing" data-animate="fadeInUp"><i
                                 class="fa fa-instagram"></i></a>
-                        <br>&nbsp; &copy; 2015 Urbis.
+
                     </p>
                 </div>
 
             </div>
-
-
         </div>
-        <!-- /.container -->
     </div>
-    <!-- /.section -->
 
     <!-- *** FOOTER END *** -->
 </div>

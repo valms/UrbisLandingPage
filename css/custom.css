@@ -30,7 +30,7 @@
     border-style: solid;
     border-color: #d8e02a;
     border-radius: 10px;
-    border-width: 0px 1px 1px 1px;
+    border-width: 2px 2px 2px 2px;
 }
 
 .btn-default {
@@ -44,6 +44,24 @@
 .navbar-default .navbar-nav > .active > a:focus {
     color: #1AAA9B;
     background-color: transparent;
+}
+
+.vid {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.vid iframe,
+.vid object,
+.vid embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 72%;
+    height: 88%;
 }
 
 /* ---------------------------------------------- /*

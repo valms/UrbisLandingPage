@@ -13,13 +13,13 @@ $(window).load(function () {
 });
 
 (function ($) {
-    $('a[href*=#]').bind("click", function (e) {
+    $('a[href*=#]').bind("click", function (event) {
 
         var anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $(anchor.attr('href')).offset().top
         }, 1000);
-        e.preventDefault();
+        event.preventDefault();
     });
 
     $(window).scroll(function () {
@@ -34,10 +34,12 @@ $(window).load(function () {
 })(jQuery);
 
 
+$("#buttonCliente").click(function (event) {
 
+    document.getElementById('inscricaoClienteForm').style.visibility = 'hidden'
+    event.preventDefault();
 
-
-
+});
 //################################### Mascaras #################################################
 //################################### Mascaras #################################################
 //################################### Mascaras #################################################
