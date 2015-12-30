@@ -74,8 +74,8 @@
 /* ---------------------------------------------- */
 
 #intro .item h1 {
-    margin-top: -50px;
-    font-size: 28px;
+    margin-top: -80px;
+    font-size: 35px;
     text-transform: uppercase;
     color: #000;
     margin-bottom: 40px;
@@ -98,6 +98,12 @@
 
 #intro .btn-link {
     outline: 0;
+}
+
+#intro .item p {
+    color: #000;
+    font-size: 15px;
+    margin-top:-20px;
 }
 
 #footer p.social {
