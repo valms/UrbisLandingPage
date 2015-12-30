@@ -34,12 +34,20 @@ $(window).load(function () {
 })(jQuery);
 
 
-$("#buttonCliente").click(function (event) {
+var holders = $("#inscricaoParceiroContainer, #inscricaoClienteContainer").hide();
+$("#inscricaoClienteContainer").show();
+$("#inscricaoParceiroContainer").hide();
 
-    document.getElementById('inscricaoClienteForm').style.visibility = 'hidden'
-    event.preventDefault();
-
+$("#buttonCliente").click(function(){
+    $("#inscricaoClienteContainer").show('slow');
+    $("#inscricaoParceiroContainer").hide();
 });
+
+$("#buttonParceiro").click(function(){
+    $("#inscricaoParceiroContainer").show('slow');
+    $("#inscricaoClienteContainer").hide();
+});
+
 //################################### Mascaras #################################################
 //################################### Mascaras #################################################
 //################################### Mascaras #################################################

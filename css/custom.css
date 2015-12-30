@@ -1,6 +1,7 @@
 .navbar, navbar-default {
     background-color: #f2f2f2;
     margin-bottom: 0px;
+    outline: 0;
 
 }
 
@@ -12,11 +13,14 @@
 
 }
 
-.linhaDivisoria {
-    background: rgba(135, 135, 135, 0.5);
-    width: 1px;
-    height: 400px;
-    /* margin: 30px auto; */
+@media (max-width: 767px) {
+    .linhaDivisoria {
+        background: rgba(135, 135, 135, 0.5);
+        width: 1px;
+        height: 400px;
+        /* margin: 30px auto; */
+    }
+
 }
 
 .formContainerCliente {
@@ -44,6 +48,7 @@
 .navbar-default .navbar-nav > .active > a:focus {
     color: #1AAA9B;
     background-color: transparent;
+    outline: 0;
 }
 
 .vid {
@@ -89,6 +94,10 @@
 #intro i {
     color: rgba(255, 150, 0, 0.74);
 
+}
+
+#intro .btn-link {
+    outline: 0;
 }
 
 #footer p.social {
