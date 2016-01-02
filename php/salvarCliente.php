@@ -2,16 +2,15 @@
 
 if (isset ( $_POST ['nome'] )) {
 
-	$uf          = $_POST ['uf'];
-	$rua         = $_POST ['rua'];
-	$rua         = $_POST ['numero'];
-	$cep         = $_POST ['cep'];
 	$nome        = $_POST ['nome'];
-	$email       = $_POST ['email'];
-	$cidade      = $_POST ['cidade'];
+	$rua         = $_POST ['rua'];
+	$cep         = $_POST ['cep'];
+	$numero      = $_POST ['numero'];
 	$bairro      = $_POST ['bairro'];
 	$complemento = $_POST ['complemento'];
+	$cidade      = $_POST ['cidade'];
+	$uf          = $_POST ['uf'];
+	$email       = $_POST ['email'];
 
 
-	var_dump ( $_POST ['nome'] );
 }

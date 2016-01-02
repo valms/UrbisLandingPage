@@ -181,7 +181,7 @@
 /* ---------------------------------------------- */
 
 #preloader {
-    background: #FFF;
+    background: #555555;
     bottom: 0;
     left: 0;
     position: fixed;
@@ -191,7 +191,7 @@
 }
 
 #status {
-    background-image: url(../img/preloader.gif);
+    background-image: url(http://qchemlab.org/images/progress_resetpass.gif);
     background-position: center;
     background-repeat: no-repeat;
     height: 200px;
