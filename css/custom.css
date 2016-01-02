@@ -2,7 +2,6 @@
     background-color: #f2f2f2;
     margin-bottom: 0px;
     outline: 0;
-
 }
 
 .divForm {
@@ -13,7 +12,7 @@
 
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
     .linhaDivisoria {
         background: rgba(135, 135, 135, 0.5);
         width: 1px;
@@ -74,13 +73,17 @@
 /* ---------------------------------------------- */
 
 #intro .item h1 {
-    margin-top: -80px;
-    font-size: 35px;
+    margin-top: -50px;
+    font-size: 28px;
     text-transform: uppercase;
     color: #000;
     margin-bottom: 40px;
     opacity: 0;
     box-shadow: none;
+}
+
+#intro .form-control {
+    border-radius: 10px;
 }
 
 #intro form {
@@ -98,12 +101,6 @@
 
 #intro .btn-link {
     outline: 0;
-}
-
-#intro .item p {
-    color: #000;
-    font-size: 15px;
-    margin-top:-20px;
 }
 
 #footer p.social {

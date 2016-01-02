@@ -219,6 +219,85 @@ $('#inscricaoClienteForm').submit(function (e) {
 });
 
 
+
+$('#inscricaoParceiroForm').submit(function (e) {
+
+
+    e.preventDefault();
+
+    var c_nomeRepresentante = $('#c_nomeRepresentante').val();
+    var c_cep = $('#c_cep').inputmask('remove').val();
+    var c_rua = $('#c_rua').val();
+    var c_bairro = $('#c_bairro').val();
+    var c_complemento = $('#c_complemento').val();
+    var c_uf = $('#c_uf').val();
+    var c_cidade = $('#c_cidade').val();
+    var c_email = $('#c_email').val();
+    var c_numero = $('#c_numero').val();
+
+    var response = $('#inscricaoForm .ajax-response');
+
+    var formData = {
+        'nome': c_nomeRepresentante,
+        'cep': c_cep,
+        'rua': c_rua,
+        'numero': c_numero,
+        'bairro': c_bairro,
+        'complemento': c_complemento,
+        'uf': c_uf,
+        'cidade': c_cidade,
+        'email': c_email
+    };
+
+    if (( c_nomeRepresentante == '' || c_cep == '' || c_rua == '' || c_bairro == ''
+        || c_uf == '' || c_cidade == '' || c_email == '')) {
+        BootstrapDialog.show({
+            type: BootstrapDialog.TYPE_WARNING,
+            title: 'Alerta',
+            message: 'Existem Campos Vazios.'
+        });
+
+    } else if ((!isValidEmailAddress(c_email) )) {
+        BootstrapDialog.show({
+            type: BootstrapDialog.TYPE_WARNING,
+            title: 'Alerta',
+            message: 'Email inválido.'
+        });
+
+        $("#c_email").val("");
+
+    } else {
+        $.ajax({
+            type: 'POST',
+            url: 'php/salvarCliente.php',
+            data: formData,
+            dataType: 'json',
+            encode: true,
+            success: function (res) {
+                var ret = $.parseJSON(JSON.stringify(res));
+                response.html(ret.message).fadeIn(500);
+            }
+        });
+
+        BootstrapDialog.show({
+            type: BootstrapDialog.TYPE_SUCCESS,
+            title: 'Cadastro',
+            message: 'Cadastro Realizado com Sucesso! Obrigado!'
+        });
+
+        document.getElementById("c_nomeRepresentante").disabled = true;
+        document.getElementById("c_cep").disabled = true;
+        document.getElementById("c_email").disabled = true;
+        document.getElementById("c_complemento").disabled = true;
+        document.getElementById("c_numero").disabled = true;
+        document.getElementById("submitButton").disabled = true;
+
+    }
+
+
+});
+
+
 /* ---------------------------------------------- /*
  * E-mail validation
  /* ---------------------------------------------- */
