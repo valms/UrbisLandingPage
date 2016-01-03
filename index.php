@@ -111,12 +111,13 @@
                     <div class="col-lg-5">
                         <div class="col-lg-3">
                             <button class="btn btn-link" id="buttonCliente">
-                                <img src="img/clientes-label.png"/>
+                                <img class="img-responsive" src="img/clientes-label.png"/>
                             </button>
                         </div>
+
                         <div class="col-lg-3">
                             <button class="btn btn-link" id="buttonParceiro">
-                                <img src="img/parceiros-label.png"/>
+                                <img class="img-responsive" src="img/parceiros-label.png"/>
                             </button>
                         </div>
                     </div>
@@ -316,7 +317,8 @@
                                 </div>
 
                             </div>
-                            <button class="btn btn-lg btn-default" id="submitButtonRepresentante" type="submit" form="inscricaoParceiroForm">inscreva-se!
+                            <button class="btn btn-lg btn-default" id="submitButtonRepresentante" type="submit"
+                                    form="inscricaoParceiroForm">inscreva-se!
                             </button>
                             <br><br>
                         </form>
@@ -380,7 +382,7 @@
                     <div class="col-md-3" data-animate="fadeInUp">
                         <img src="img/APRESENTE-O-CARTAO.png" href="#intro" class="img-responsive"
                              style="border-color: #9b9b9b; border-style: solid; border-right-width: 10px;
-                              border-width: 0px 01px 0px 0px; margin-left: 10px;"/>
+                              border-width: 0px 01px 0px 0px;"/>
 
                         <h3 class="heading">Apresente seu Cartão de exclusividades e comemore seu desconto!</h3>
                     </div>
