@@ -38,12 +38,12 @@ var holders = $("#inscricaoParceiroContainer, #inscricaoClienteContainer").hide(
 $("#inscricaoClienteContainer").show();
 $("#inscricaoParceiroContainer").hide();
 
-$("#buttonCliente").click(function(){
+$("#buttonCliente").click(function () {
     $("#inscricaoClienteContainer").show('slow');
     $("#inscricaoParceiroContainer").hide();
 });
 
-$("#buttonParceiro").click(function(){
+$("#buttonParceiro").click(function () {
     $("#inscricaoParceiroContainer").show('slow');
     $("#inscricaoClienteContainer").hide();
 });
@@ -74,19 +74,19 @@ $(".cep").on("blur", (function () {
 
         if (validacep.test(cep)) {
 
-            $("#c_rua").val("...");
-            $("#c_bairro").val("...");
-            $("#c_cidade").val("...");
-            $("#c_uf").val("...");
+            $(".c_rua").val("...");
+            $(".c_bairro").val("...");
+            $(".c_cidade").val("...");
+            $(".c_uf").val("...");
 
             $.getJSON("//viacep.com.br/ws/" + cep + "/json/?callback=?", function (dados) {
 
                 if (!("erro" in dados)) {
                     //Atualiza os campos com os valores da consulta.
-                    $("#c_rua").val(dados.logradouro);
-                    $("#c_bairro").val(dados.bairro);
-                    $("#c_cidade").val(dados.localidade);
-                    $("#c_uf").val(dados.uf);
+                    $(".c_rua").val(dados.logradouro);
+                    $(".c_bairro").val(dados.bairro);
+                    $(".c_cidade").val(dados.localidade);
+                    $(".c_uf").val(dados.uf);
                 } else {
                     BootstrapDialog.show({
                         type: BootstrapDialog.TYPE_WARNING,
@@ -113,12 +113,12 @@ $(".cep").on("blur", (function () {
 }));
 
 function limpa_formulario_cep() {
-    $("#c_rua").val("");
-    $("#c_bairro").val("");
-    $("#c_cidade").val("");
-    $("#c_uf").val("");
-    $("#c_cep").val("");
-    $("#c_numero").val("")
+    $(".c_rua").val("");
+    $(".c_bairro").val("");
+    $(".c_cidade").val("");
+    $(".c_uf").val("");
+    $(".c_cep").val("");
+    $(".c_numero").val("")
 
 }
 
@@ -203,7 +203,7 @@ $('#inscricaoClienteForm').submit(function (e) {
         BootstrapDialog.show({
             type: BootstrapDialog.TYPE_SUCCESS,
             title: 'Cadastro',
-            message: 'Cadastro Realizado com Sucesso! Obrigado!'
+            message: 'Cadastro Realizado com Sucesso! Obrigado! '
         });
 
         document.getElementById("c_name").disabled = true;
@@ -219,45 +219,44 @@ $('#inscricaoClienteForm').submit(function (e) {
 });
 
 
-
 $('#inscricaoParceiroForm').submit(function (e) {
 
 
     e.preventDefault();
 
     var c_nomeRepresentante = $('#c_nomeRepresentante').val();
-    var c_cep = $('#c_cep').inputmask('remove').val();
-    var c_rua = $('#c_rua').val();
-    var c_bairro = $('#c_bairro').val();
-    var c_complemento = $('#c_complemento').val();
-    var c_uf = $('#c_uf').val();
-    var c_cidade = $('#c_cidade').val();
-    var c_email = $('#c_email').val();
-    var c_numero = $('#c_numero').val();
+    var c_cepRepresentante = $('#c_cepRepresentante').inputmask('remove').val();
+    var c_ruaRepresentante = $('#c_ruaRepresentante').val();
+    var c_bairroRepresentante = $('#c_bairroRepresentante').val();
+    var c_complementoRepresentante = $('#c_complementoRepresentante').val();
+    var c_ufRepresentante = $('#c_ufRepresentante').val();
+    var c_cidadeRepresentante = $('#c_cidadeRepresentante').val();
+    var c_emailRepresentante = $('#c_emailRepresentante').val();
+    var c_numeroRepresentante = $('#c_numeroRepresentante').val();
 
     var response = $('#inscricaoForm .ajax-response');
 
     var formData = {
         'nome': c_nomeRepresentante,
-        'cep': c_cep,
-        'rua': c_rua,
-        'numero': c_numero,
-        'bairro': c_bairro,
-        'complemento': c_complemento,
-        'uf': c_uf,
-        'cidade': c_cidade,
-        'email': c_email
+        'cep': c_cepRepresentante,
+        'rua': c_ruaRepresentante,
+        'numero': c_numeroRepresentante,
+        'bairro': c_bairroRepresentante,
+        'complemento': c_complementoRepresentante,
+        'uf': c_ufRepresentante,
+        'cidade': c_cidadeRepresentante,
+        'email': c_emailRepresentante
     };
 
-    if (( c_nomeRepresentante == '' || c_cep == '' || c_rua == '' || c_bairro == ''
-        || c_uf == '' || c_cidade == '' || c_email == '')) {
+    if (( c_nomeRepresentante == '' || c_cepRepresentante == '' || c_ruaRepresentante == '' || c_bairroRepresentante == ''
+        || c_ufRepresentante == '' || c_cidadeRepresentante == '' || c_emailRepresentante == '')) {
         BootstrapDialog.show({
             type: BootstrapDialog.TYPE_WARNING,
             title: 'Alerta',
             message: 'Existem Campos Vazios.'
         });
 
-    } else if ((!isValidEmailAddress(c_email) )) {
+    } else if ((!isValidEmailAddress(c_emailRepresentante) )) {
         BootstrapDialog.show({
             type: BootstrapDialog.TYPE_WARNING,
             title: 'Alerta',
@@ -269,7 +268,7 @@ $('#inscricaoParceiroForm').submit(function (e) {
     } else {
         $.ajax({
             type: 'POST',
-            url: 'php/salvarCliente.php',
+            url: 'php/salvarParceiro.php',
             data: formData,
             dataType: 'json',
             encode: true,
@@ -286,11 +285,11 @@ $('#inscricaoParceiroForm').submit(function (e) {
         });
 
         document.getElementById("c_nomeRepresentante").disabled = true;
-        document.getElementById("c_cep").disabled = true;
-        document.getElementById("c_email").disabled = true;
-        document.getElementById("c_complemento").disabled = true;
-        document.getElementById("c_numero").disabled = true;
-        document.getElementById("submitButton").disabled = true;
+        document.getElementById("c_cepRepresentante").disabled = true;
+        document.getElementById("c_emailRepresentante").disabled = true;
+        document.getElementById("c_complementoRepresentante").disabled = true;
+        document.getElementById("c_numeroRepresentante").disabled = true;
+        document.getElementById("submitButtonRepresentante").disabled = true;
 
     }
 

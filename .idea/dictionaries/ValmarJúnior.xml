@@ -5,10 +5,13 @@
       <w>cidade</w>
       <w>cliente</w>
       <w>complemento</w>
+      <w>dbname</w>
       <w>inscricao</w>
       <w>júnior</w>
       <w>numero</w>
+      <w>representante</w>
       <w>salvar</w>
+      <w>servername</w>
       <w>valmar</w>
     </words>
   </dictionary>

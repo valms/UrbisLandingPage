@@ -102,8 +102,8 @@
         <div class="item">
             <div class="container">
                 <div class="row">
-                    <h1 data-animate="fadeInDown">Desfrute dos melhores estabelecimentos da cidade com descontos de até
-                        50%</h1>
+                    <h1 data-animate="fadeInDown">Desfrute dos melhores estabelecimentos da
+                        cidade com descontos de até 50%!</h1>
                 </div>
 
                 <div class="row">
@@ -134,8 +134,8 @@
                     <div class="col-lg-5 formContainerCliente" id="inscricaoClienteContainer">
                         <div class="row"><br></div>
 
-                        <form id="inscricaoClienteForm" class="inscricaoClienteForm" data-toggle="validator"
-                              role="form">
+                        <form id="inscricaoClienteForm" name="inscricaoClienteForm" class="inscricaoClienteForm"
+                              data-toggle="validator" role="form" method="post">
 
                             <div class="ajax-hidden">
                                 <div class="row ">
@@ -162,7 +162,7 @@
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <input data-animate="fadeInDown" type="text" id="c_rua"
-                                                   class="form-control"
+                                                   class="form-control c_rua"
                                                    name="c_rua" placeholder="Rua" disabled/>
                                         </div>
                                     </div>
@@ -178,7 +178,7 @@
                                     <div class="col-lg-3">
                                         <div class="form-group">
                                             <input data-animate="fadeInDown" type="text" id="c_bairro"
-                                                   class="form-control"
+                                                   class="form-control c_bairro"
                                                    name="c_bairro" placeholder="Bairro" disabled/>
                                         </div>
                                     </div>
@@ -195,15 +195,15 @@
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <input data-animate="fadeInDown" type="text" id="c_cidade"
-                                                   class="form-control"
-                                                   name="c_cidade" placeholder="Cidade" disabled/>
+                                                   class="form-control c_cidade"
+                                                   name="c_cidade " placeholder="Cidade" disabled/>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <input data-animate="fadeInDown" type="text" id="c_uf"
-                                                   class="form-control"
-                                                   name="c_uf" placeholder="UF" disabled/>
+                                                   class="form-control c_uf"
+                                                   name="c_uf " placeholder="UF" disabled/>
                                         </div>
                                     </div>
 
@@ -220,7 +220,7 @@
                                 </div>
 
                             </div>
-                            <button class="btn btn-lg btn-default" id="submitButton" type="submit">HABITE URBIS!
+                            <button class="btn btn-lg btn-default" id="submitButton" type="submit">inscreva-se!
                             </button>
                             <br><br>
                         </form>
@@ -246,7 +246,7 @@
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div class="form-group has-feedback">
-                                            <input data-animate="fadeInDown" type="text" id="c_cep"
+                                            <input data-animate="fadeInDown" type="text" id="c_cepRepresentante"
                                                    class="form-control cep" name="c_cep" placeholder="C.E.P"
                                                    required/>
                                                     <span class="glyphicon form-control-feedback"
@@ -257,8 +257,8 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group">
-                                            <input data-animate="fadeInDown" type="text" id="c_rua"
-                                                   class="form-control"
+                                            <input data-animate="fadeInDown" type="text" id="c_ruaRepresentante"
+                                                   class="form-control c_rua"
                                                    name="c_rua" placeholder="Rua" disabled/>
                                         </div>
                                     </div>
@@ -266,23 +266,23 @@
                                 <div class="row">
                                     <div class="col-lg-3">
                                         <div class="form-group">
-                                            <input data-animate="fadeInDown" type="text" id="c_numero"
+                                            <input data-animate="fadeInDown " type="text" id="c_numeroRepresentante"
                                                    class="form-control"
                                                    name="c_numero" placeholder="Nº"/>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="form-group">
-                                            <input data-animate="fadeInDown" type="text" id="c_bairro"
-                                                   class="form-control"
+                                            <input data-animate="fadeInDown" type="text" id="c_bairroRepresentante"
+                                                   class="form-control c_bairro"
                                                    name="c_bairro" placeholder="Bairro" disabled/>
                                         </div>
                                     </div>
 
                                     <div class="col-lg-6">
                                         <div class="form-group">
-                                            <input data-animate="fadeInDown" type="text" id="c_complemento"
-                                                   class="form-control"
+                                            <input data-animate="fadeInDown" type="text" id="c_complementoRepresentante"
+                                                   class="form-control "
                                                    name="c_complemento" placeholder="Complemento"/>
                                         </div>
                                     </div>
@@ -290,15 +290,15 @@
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div class="form-group">
-                                            <input data-animate="fadeInDown" type="text" id="c_cidade"
-                                                   class="form-control"
+                                            <input data-animate="fadeInDown" type="text" id="c_cidadeRepresentante"
+                                                   class="form-control c_cidade"
                                                    name="c_cidade" placeholder="Cidade" disabled/>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group">
-                                            <input data-animate="fadeInDown" type="text" id="c_uf"
-                                                   class="form-control"
+                                            <input data-animate="fadeInDown" type="text" id="c_ufRepresentante"
+                                                   class="form-control c_uf"
                                                    name="c_uf" placeholder="UF" disabled/>
                                         </div>
                                     </div>
@@ -306,7 +306,7 @@
                                 </div>
                                 <div class="row ">
                                     <div class="form-group col-lg-12">
-                                        <input data-animate="fadeInDown" type="email" id="c_email"
+                                        <input data-animate="fadeInDown" type="email" id="c_emailRepresentante"
                                                class="form-control"
                                                name="c_email" placeholder="Email"
                                                data-error="Email Inválido" required/>
@@ -316,7 +316,7 @@
                                 </div>
 
                             </div>
-                            <button class="btn btn-lg btn-default" id="submitButton" type="submit">HABITE URBIS!
+                            <button class="btn btn-lg btn-default" id="submitButtonRepresentante" type="submit" form="inscricaoParceiroForm">inscreva-se!
                             </button>
                             <br><br>
                         </form>

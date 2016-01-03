@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="1b14e49d-cd6a-4b26-9b0b-e9b57971a104" name="XAMPP" url="http://localhost:8080/UrbisLandingPage">
+        <fileTransfer mountedRoot="C:\xampp\htdocs\UrbisLandingPage" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

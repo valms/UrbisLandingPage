@@ -11,17 +11,16 @@ try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 
-    if (isset ($_POST ['nome'])) {
 
-        $nomeRepresentante = $_POST ['nome'];
-        $rua = $_POST ['rua'];
-        $cep = $_POST ['cep'];
-        $numero = $_POST ['numero'];
-        $bairro = $_POST ['bairro'];
-        $complemento = $_POST ['complemento'];
-        $cidade = $_POST ['cidade'];
-        $uf = $_POST ['uf'];
-        $email = $_POST ['email'];
+        $nomeRepresentante = "adsadsad";
+        $rua = "dsadsa";
+        $cep = "dasdsa";
+        $numero = "dasd";
+        $bairro ="dasd";
+        $complemento = "dasda";
+        $cidade = "dasd";
+        $uf = "dasdas";
+        $email = "dasd";
 
 
         $stmt = $conn->prepare("INSERT INTO `parceiros` ( `nomeRepresentante`, `enderecoRua`, `enderecoCep`, `enderecoNumero`, `enderecoBairro`, `enderecoComplemento`, `enderecoCidade`, `enderecoUf`, `email`)  VALUES(:nome, :rua, :cep, :numero, :bairro, :complemento, :cidade, :uf, :email)");
@@ -38,7 +37,8 @@ try {
         ));
 
         $conn = null;
-    }
+
+    echo "<script type='javascript'>alert('Email enviado com Sucesso!');";
 } catch (PDOException $e) {
     echo "Connection failed: " . $e->getMessage();
 }
