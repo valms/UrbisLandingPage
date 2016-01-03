@@ -23,7 +23,8 @@
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/bootstrap-dialog.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Gabriela' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
+          type='text/css'>
     <link href="css/font-awesome.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/owl.carousel.css" rel="stylesheet">
@@ -399,30 +400,30 @@
     </div>
 
     <!-- *** Fim da Seção 02 - Explicação Sobre Urbis *** -->
-    <div class="section" id="sobre">
+    <div class="section" id="sobre" data-animate="bounceIn">
         <div class="container">
             <div class="col-md-12">
 
 
-                <h2 class="title" data-animate="fadeInDown">Sobre</h2>
+                <h2 class="title">Sobre</h2>
 
                 <div class="row">
 
                     <div class="col-md-8 col-md-offset-2">
 
-                        <p class="text-large text-thin" data-animate="fadeInUp"> Olá, pessoal! Nós do Urbis convidamos
+                        <p class="text-large text-thin"> Olá, pessoal! Nós do Urbis convidamos
                             todos vocês a fazerem do primeiro grupo a desfrutar dessa metrópole de exclusividades. </p>
 
-                        <p class="text-large text-thin" data-animate="fadeInUp">Nessa fase inicial, todas
+                        <p class="text-large text-thin">Nessa fase inicial, todas
                             as pessoas que tiverem se cadastrado ganharão um (01) mês de GRAÇA para aproveitarem ao
                             máximo os serviços de nossos parceiros. </p>
 
-                        <p class="text-large text-thin margin-bottom" data-animate="fadeInUp">Cadastre-se já e aguarde
+                        <p class="text-large text-thin margin-bottom">Cadastre-se já e aguarde
                             que logo mais deremos
                             início ao nosso serviço!</p>
 
-                        <p data-animate="fadeInUp"><img src="img/logoHorizontal.png" alt=""
-                                                        class="img-circle img-responsive ondra-michal"></p>
+                        <p><img src="img/logoHorizontal.png" alt=""
+                                class="img-circle img-responsive ondra-michal"></p>
 
                     </div>
 
