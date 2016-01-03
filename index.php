@@ -111,13 +111,13 @@
                     <div class="col-lg-5">
                         <div class="col-lg-3">
                             <button class="btn btn-link" id="buttonCliente">
-                                <img class="img-responsive" src="img/clientes-label.png"/>
+                                <img src="img/clientes-label.png"/>
                             </button>
                         </div>
 
                         <div class="col-lg-3">
                             <button class="btn btn-link" id="buttonParceiro">
-                                <img class="img-responsive" src="img/parceiros-label.png"/>
+                                <img src="img/parceiros-label.png"/>
                             </button>
                         </div>
                     </div>
