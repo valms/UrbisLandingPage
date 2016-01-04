@@ -12,16 +12,6 @@
 
 }
 
-@media screen and (min-width: 701px) and (max-width: 900px) {
-    .linhaDivisoria {
-        background: rgba(135, 135, 135, 0.5);
-        width: 1px;
-        height: 400px;
-        /* margin: 30px auto; */
-    }
-
-}
-
 .formContainerCliente {
     border-style: solid;
     border-color: #1baa9c;
@@ -38,7 +28,7 @@
 
 .btn-default {
     color: #FFF;
-    background-color: #202020;
+    background-color: #555555;
     border-color: #ccc;
 }
 
@@ -57,7 +47,6 @@
     height: 0;
     overflow: hidden;
 
-
 }
 
 .vid iframe,
@@ -66,8 +55,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 72%;
-    height: 88%;
+    width: 100%;
+    height: 100%;
 
 }
 
@@ -85,12 +74,24 @@
     box-shadow: none;
 }
 
+#intro .item h2 {
+    color: #555555;
+    font-size: 20px;
+}
+
 #intro .form-control {
     border-radius: 10px;
 }
 
-#intro form {
-    margin-left: 10px;
+#intro .item p {
+    color: #555555;
+    text-align: left;
+    font-size: 22px;
+}
+
+#intro .ctaButton, .submitButton {
+    border-radius: 10px;
+    outline: none;
 }
 
 #intro .item {
@@ -99,6 +100,11 @@
 
 #intro i {
     color: rgba(255, 150, 0, 0.74);
+
+}
+
+#intro .ctaButton {
+    margin-top: 20px;
 
 }
 
@@ -143,6 +149,25 @@
     animation-delay: 0s;
     animation-iteration-count: infinite;
     animation-play-state: running;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .lead {
+        color: #404040 !important;
+        opacity: 1 !important;
+    }
+
+    .sobreNos {
+        border-style: solid;
+        border-radius: 10px;
+        border-width: 2px 2px 2px 2px;
+        background-color: #fffffb;
+        margin-top: 1em;
+        opacity: .9;
+
+    }
+
 }
 
 @-webkit-keyframes drop {
@@ -204,3 +229,4 @@
     top: 50%;
     width: 200px;
 }
+

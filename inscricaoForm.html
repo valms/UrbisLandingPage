@@ -1,0 +1,95 @@
+<div class="col-lg-5 formContainerCliente" id="inscricaoClienteContainer">
+    <div class="row"><br></div>
+
+    <form id="inscricaoClienteForm" name="inscricaoClienteForm" class="inscricaoClienteForm"
+          data-toggle="validator" role="form" method="post" action="admin/index.php">
+
+        <div class="ajax-hidden">
+            <div class="row ">
+                <div class="form-group col-lg-12 has-feedback">
+                    <input data-animate="fadeInDown" type="text" id="c_name"
+                           class="form-control"
+                           name="c_name" placeholder="Nome" required/>
+                    <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                    <span class="help-block with-errors"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="form-group has-feedback">
+                        <input data-animate="fadeInDown" type="text" id="c_cep"
+                               class="form-control cep" name="c_cep" placeholder="C.E.P"
+                               required/>
+                                                    <span class="glyphicon form-control-feedback"
+                                                          aria-hidden="true"></span>
+                        <span class="help-block with-errors"></span>
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <input data-animate="fadeInDown" type="text" id="c_rua"
+                               class="form-control c_rua"
+                               name="c_rua" placeholder="Rua" disabled/>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="form-group">
+                        <input data-animate="fadeInDown" type="text" id="c_numero"
+                               class="form-control"
+                               name="c_numero" placeholder="Nº"/>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="form-group">
+                        <input data-animate="fadeInDown" type="text" id="c_bairro"
+                               class="form-control c_bairro"
+                               name="c_bairro" placeholder="Bairro" disabled/>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <input data-animate="fadeInDown" type="text" id="c_complemento"
+                               class="form-control"
+                               name="c_complemento" placeholder="Complemento"/>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <input data-animate="fadeInDown" type="text" id="c_cidade"
+                               class="form-control c_cidade"
+                               name="c_cidade " placeholder="Cidade" disabled/>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <input data-animate="fadeInDown" type="text" id="c_uf"
+                               class="form-control c_uf"
+                               name="c_uf " placeholder="UF" disabled/>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row ">
+                <div class="form-group col-lg-12">
+                    <input data-animate="fadeInDown" type="email" id="c_email"
+                           class="form-control"
+                           name="c_email" placeholder="Email"
+                           data-error="Email Inválido" required/>
+
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+
+        </div>
+        <button class="btn btn-lg btn-default" id="submitButton" type="submit">inscreva-se!
+        </button>
+        <br><br>
+    </form>
+
+</div>
