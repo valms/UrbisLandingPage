@@ -84,8 +84,6 @@
                     </li>
                     <li><a href="#comoFunciona">como funciona</a>
                     </li>
-                    <li><a href="#sobre">Sobre</a>
-                    </li>
                     <li><a href="#footer">Contato</a>
                     </li>
 
@@ -108,227 +106,268 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-7"></div>
-                    <div class="col-lg-5">
-                        <div class="col-lg-3">
-                            <button class="btn btn-link" id="buttonCliente">
-                                <img src="img/clientes-label.png"/>
-                            </button>
-                        </div>
-
-                        <div class="col-lg-3">
-                            <button class="btn btn-link" id="buttonParceiro">
-                                <img src="img/parceiros-label.png"/>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-7">
+                    <div class="col-lg-6 col-xs-6 col-sm-6">
                         <div class="vid">
                             <iframe class="" src="https://www.youtube.com/embed/o9OIRrMj4Oo" frameborder="0"
                                     allowfullscreen>
                             </iframe>
                         </div>
-                    </div>
-
-                    <div class="col-lg-5 formContainerCliente" id="inscricaoClienteContainer">
-                        <div class="row"><br></div>
-
-                        <form id="inscricaoClienteForm" name="inscricaoClienteForm" class="inscricaoClienteForm"
-                              data-toggle="validator" role="form" method="post">
-
-                            <div class="ajax-hidden">
-                                <div class="row ">
-                                    <div class="form-group col-lg-12 has-feedback">
-                                        <input data-animate="fadeInDown" type="text" id="c_name"
-                                               class="form-control"
-                                               name="c_name" placeholder="Nome" required/>
-                                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-                                        <span class="help-block with-errors"></span>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="form-group has-feedback">
-                                            <input data-animate="fadeInDown" type="text" id="c_cep"
-                                                   class="form-control cep" name="c_cep" placeholder="C.E.P"
-                                                   required/>
-                                                    <span class="glyphicon form-control-feedback"
-                                                          aria-hidden="true"></span>
-                                            <span class="help-block with-errors"></span>
-
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <input data-animate="fadeInDown" type="text" id="c_rua"
-                                                   class="form-control c_rua"
-                                                   name="c_rua" placeholder="Rua" disabled/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-3">
-                                        <div class="form-group">
-                                            <input data-animate="fadeInDown" type="text" id="c_numero"
-                                                   class="form-control"
-                                                   name="c_numero" placeholder="Nº"/>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="form-group">
-                                            <input data-animate="fadeInDown" type="text" id="c_bairro"
-                                                   class="form-control c_bairro"
-                                                   name="c_bairro" placeholder="Bairro" disabled/>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <input data-animate="fadeInDown" type="text" id="c_complemento"
-                                                   class="form-control"
-                                                   name="c_complemento" placeholder="Complemento"/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <input data-animate="fadeInDown" type="text" id="c_cidade"
-                                                   class="form-control c_cidade"
-                                                   name="c_cidade " placeholder="Cidade" disabled/>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <input data-animate="fadeInDown" type="text" id="c_uf"
-                                                   class="form-control c_uf"
-                                                   name="c_uf " placeholder="UF" disabled/>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="row ">
-                                    <div class="form-group col-lg-12">
-                                        <input data-animate="fadeInDown" type="email" id="c_email"
-                                               class="form-control"
-                                               name="c_email" placeholder="Email"
-                                               data-error="Email Inválido" required/>
-
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <button class="btn btn-lg btn-default" id="submitButton" type="submit">inscreva-se!
-                            </button>
-                            <br><br>
-                        </form>
 
                     </div>
 
-                    <div class="col-lg-5 formContainerParceiro" id="inscricaoParceiroContainer">
-                        <div class="row"><br></div>
+                    <div class="col-lg-6 col-xs-6 col-sm-6">
 
-                        <form id="inscricaoParceiroForm" class="inscricaoParceiroForm" data-toggle="validator"
-                              role="form">
+                        <p class="lead margin-bottom"> Olá, pessoal! Nós do Urbis convidamos
+                            todos vocês a fazerem do primeiro grupo a desfrutar dessa metrópole de exclusividades.
+                            Nessa fase inicial, todas
+                            as pessoas que tiverem se cadastrado ganharão um (01) mês de GRAÇA para aproveitarem ao
+                            máximo os serviços de nossos parceiros.</p>
 
-                            <div class="ajax-hidden">
-                                <div class="row ">
-                                    <div class="form-group col-lg-12 has-feedback">
-                                        <input data-animate="fadeInDown" type="text" id="c_nomeRepresentante"
-                                               class="form-control"
-                                               name="c_name" placeholder="Nome do representante" required/>
-                                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-                                        <span class="help-block with-errors"></span>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="form-group has-feedback">
-                                            <input data-animate="fadeInDown" type="text" id="c_cepRepresentante"
-                                                   class="form-control cep" name="c_cep" placeholder="C.E.P"
-                                                   required/>
-                                                    <span class="glyphicon form-control-feedback"
-                                                          aria-hidden="true"></span>
-                                            <span class="help-block with-errors"></span>
+                        <p class="lead margin-bottom"> Cadastre-se já e aguarde que logo mais deremos início ao nosso
+                            serviço!</p>
 
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <input data-animate="fadeInDown" type="text" id="c_ruaRepresentante"
-                                                   class="form-control c_rua"
-                                                   name="c_rua" placeholder="Rua" disabled/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-3">
-                                        <div class="form-group">
-                                            <input data-animate="fadeInDown " type="text" id="c_numeroRepresentante"
-                                                   class="form-control"
-                                                   name="c_numero" placeholder="Nº"/>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="form-group">
-                                            <input data-animate="fadeInDown" type="text" id="c_bairroRepresentante"
-                                                   class="form-control c_bairro"
-                                                   name="c_bairro" placeholder="Bairro" disabled/>
-                                        </div>
-                                    </div>
 
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <input data-animate="fadeInDown" type="text" id="c_complementoRepresentante"
-                                                   class="form-control "
-                                                   name="c_complemento" placeholder="Complemento"/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <input data-animate="fadeInDown" type="text" id="c_cidadeRepresentante"
-                                                   class="form-control c_cidade"
-                                                   name="c_cidade" placeholder="Cidade" disabled/>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <input data-animate="fadeInDown" type="text" id="c_ufRepresentante"
-                                                   class="form-control c_uf"
-                                                   name="c_uf" placeholder="UF" disabled/>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="row ">
-                                    <div class="form-group col-lg-12">
-                                        <input data-animate="fadeInDown" type="email" id="c_emailRepresentante"
-                                               class="form-control"
-                                               name="c_email" placeholder="Email"
-                                               data-error="Email Inválido" required/>
-
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <button class="btn btn-lg btn-default" id="submitButtonRepresentante" type="submit"
-                                    form="inscricaoParceiroForm">inscreva-se!
-                            </button>
-                            <br><br>
-                        </form>
-
+                        <button class="btn btn-lg btn-default ctaButton" id="ctaButton" data-toggle="modal"
+                                data-target="#modalCadastro" type="button">
+                            inscreva-se!
+                        </button>
                     </div>
-
 
                 </div>
             </div>
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="modalCadastro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <button class="btn btn-link" id="buttonCliente">
+                                        <img src="img/clientes-label.png"/>
+                                    </button>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <button class="btn btn-link" id="buttonParceiro">
+                                        <img src="img/parceiros-label.png"/>
+                                    </button>
+                                </div>
+                            </div>
+
+
+                            <div class="formContainerCliente" id="inscricaoClienteContainer">
+                                <br>
+
+                                <form id="inscricaoClienteForm" name="inscricaoClienteForm" class="inscricaoClienteForm"
+                                      data-toggle="validator" role="form" method="post" action="admin/index.php">
+
+                                    <div class="ajax-hidden">
+                                        <div class="row ">
+                                            <div class="form-group col-lg-12 has-feedback">
+                                                <input data-animate="fadeInDown" type="text" id="c_name"
+                                                       class="form-control"
+                                                       name="c_name" placeholder="Nome" required/>
+                                                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                                <span class="help-block with-errors"></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group has-feedback">
+                                                    <input data-animate="fadeInDown" type="text" id="c_cep"
+                                                           class="form-control cep" name="c_cep" placeholder="C.E.P"
+                                                           required/>
+                                                    <span class="glyphicon form-control-feedback"
+                                                          aria-hidden="true"></span>
+                                                    <span class="help-block with-errors"></span>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <input data-animate="fadeInDown" type="text" id="c_rua"
+                                                           class="form-control c_rua"
+                                                           name="c_rua" placeholder="Rua" disabled/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-3">
+                                                <div class="form-group">
+                                                    <input data-animate="fadeInDown" type="text" id="c_numero"
+                                                           class="form-control"
+                                                           name="c_numero" placeholder="Nº" required/>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="form-group">
+                                                    <input data-animate="fadeInDown" type="text" id="c_bairro"
+                                                           class="form-control c_bairro"
+                                                           name="c_bairro" placeholder="Bairro" disabled/>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <input data-animate="fadeInDown" type="text" id="c_complemento"
+                                                           class="form-control"
+                                                           name="c_complemento" placeholder="Complemento"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <input data-animate="fadeInDown" type="text" id="c_cidade"
+                                                           class="form-control c_cidade"
+                                                           name="c_cidade " placeholder="Cidade" disabled/>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <input data-animate="fadeInDown" type="text" id="c_uf"
+                                                           class="form-control c_uf"
+                                                           name="c_uf " placeholder="UF" disabled/>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="row ">
+                                            <div class="form-group col-lg-12">
+                                                <input data-animate="fadeInDown" type="email" id="c_email"
+                                                       class="form-control"
+                                                       name="c_email" placeholder="Email"
+                                                       data-error="Email Inválido" required/>
+
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <button class="btn btn-lg btn-default submitButton" id="submitButton" type="submit">
+                                        inscreva-se!
+                                    </button>
+                                    <br><br>
+                                </form>
+
+                            </div>
+
+
+                            <div class="formContainerParceiro" id="inscricaoParceiroContainer">
+                                <div class="row"><br></div>
+
+                                <form id="inscricaoParceiroForm" class="inscricaoParceiroForm" data-toggle="validator"
+                                      role="form">
+
+                                    <div class="ajax-hidden">
+                                        <div class="row ">
+                                            <div class="form-group col-lg-12 has-feedback">
+                                                <input data-animate="fadeInDown" type="text" id="c_nomeRepresentante"
+                                                       class="form-control"
+                                                       name="c_name" placeholder="Nome do representante" required/>
+                                                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                                <span class="help-block with-errors"></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group has-feedback">
+                                                    <input data-animate="fadeInDown" type="text" id="c_cepRepresentante"
+                                                           class="form-control cep" name="c_cep" placeholder="C.E.P"
+                                                           required/>
+                                                    <span class="glyphicon form-control-feedback"
+                                                          aria-hidden="true"></span>
+                                                    <span class="help-block with-errors"></span>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <input data-animate="fadeInDown" type="text" id="c_ruaRepresentante"
+                                                           class="form-control c_rua"
+                                                           name="c_rua" placeholder="Rua" disabled/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-3">
+                                                <div class="form-group">
+                                                    <input data-animate="fadeInDown " type="text"
+                                                           id="c_numeroRepresentante"
+                                                           class="form-control"
+                                                           name="c_numero" placeholder="Nº" required/>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="form-group">
+                                                    <input data-animate="fadeInDown" type="text"
+                                                           id="c_bairroRepresentante"
+                                                           class="form-control c_bairro"
+                                                           name="c_bairro" placeholder="Bairro" disabled/>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <input data-animate="fadeInDown" type="text"
+                                                           id="c_complementoRepresentante"
+                                                           class="form-control "
+                                                           name="c_complemento" placeholder="Complemento"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <input data-animate="fadeInDown" type="text"
+                                                           id="c_cidadeRepresentante"
+                                                           class="form-control c_cidade"
+                                                           name="c_cidade" placeholder="Cidade" disabled/>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <input data-animate="fadeInDown" type="text" id="c_ufRepresentante"
+                                                           class="form-control c_uf"
+                                                           name="c_ufRepresentante" placeholder="UF" disabled/>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="row ">
+                                            <div class="form-group col-lg-12">
+                                                <input data-animate="fadeInDown" type="email" id="c_emailRepresentante"
+                                                       class="form-control"
+                                                       name="c_email" placeholder="Email"
+                                                       data-error="Email Inválido" required/>
+
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <button class="btn btn-lg btn-default submitButton" id="submitButtonRepresentante"
+                                            type="submit">
+                                        inscreva-se!
+                                    </button>
+                                    <br><br>
+                                </form>
+
+                            </div>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-primary">Inscrever-se</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
             <div class="scroll-down" role="navigation">
                 <a href="#comoFunciona">
@@ -343,6 +382,77 @@
 
     <!-- *** Seção 02 - Explicação Sobre Urbis *** -->
     <div class="section  text-gray" id="comoFunciona">
+        <div class="container">
+            <div class="col-lg-12 col-xs-12 col-sm-12">
+                <br><br><br>
+
+                <h2 class="title" data-animate="fadeInDown">Como Funciona</h2>
+
+                <p class="lead margin-bottom" data-animate="fadeInDown">Ser Urbis é saber aproveitar tudo que a cidade
+                    oferece de
+                    melhor. Genuinamente cearense, o Cartão Urbis veio para propiciar experiências únicas nos mais
+                    diversos segmentos.
+                    <br>
+                    Faça parte dessa metrópole de exclusividades: Urbi-se!
+                </p>
+
+                <div class="row services">
+
+                    <div class="col-lg-1  col-sm-1" data-animate="fadeInUp"><br><br><br>
+                    </div>
+
+                    <div class="col-lg-2  col-sm-2" data-animate="fadeInUp">
+                        <img src="img/URBI-SE.png" href="#intro" class="img-responsive "/>
+
+                        <h3 class="heading">Cadastre-se</h3>
+                    </div>
+
+                    <div class="col-lg-1  col-sm-1" data-animate="fadeInUp">
+                        <div class="linhaDivisoria"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2  col-sm-2" data-animate="fadeInUp">
+                        <img src="img/EXPLORE.png" href="#intro" class="img-responsive "/>
+
+                        <h3 class="heading">Procure um estabelecimento parceiro mais próximo de você!</h3>
+                    </div>
+
+                    <div class="col-lg-1  col-sm-1" data-animate="fadeInUp">
+                        <div class="linhaDivisoria"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2  col-sm-2" data-animate="fadeInUp">
+                        <img src="img/APRESENTE-O-CARTAO.png" href="#intro" class="img-responsive "/>
+
+                        <h3 class="heading">Apresente seu Cartão de exclusividades e comemore seu desconto!</h3>
+                    </div>
+
+                    <div class="col-lg-1  col-sm-1" data-animate="fadeInUp">
+                        <div class="linhaDivisoria"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2  col-sm-2" data-animate="fadeInUp">
+                        <img src="img/DESFRUTE.png" href="#intro" class="img-responsive"/>
+
+                        <h3 class="heading">Desfrute dos Urbis</h3>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- *** Fim da Seção 02 - Explicação Sobre Urbis *** -->
+
+    <!-- *** Footer ***  -->
+
+    <div class="section" id="footer">
         <div class="container">
             <div class="col-md-12">
                 <br><br><br>
@@ -394,71 +504,6 @@
                         <h3 class="heading">Desfrute dos Urbis</h3>
                     </div>
                 </div>
-            </div>
-        </div>
-        <br><br><br><br><br><br><br><br>
-    </div>
-
-    <!-- *** Fim da Seção 02 - Explicação Sobre Urbis *** -->
-    <div class="section" id="sobre" data-animate="bounceIn">
-        <div class="container">
-            <div class="col-md-12">
-
-
-                <h2 class="title">Sobre</h2>
-
-                <div class="row">
-
-                    <div class="col-md-8 col-md-offset-2">
-
-                        <p class="text-large text-thin"> Olá, pessoal! Nós do Urbis convidamos
-                            todos vocês a fazerem do primeiro grupo a desfrutar dessa metrópole de exclusividades. </p>
-
-                        <p class="text-large text-thin">Nessa fase inicial, todas
-                            as pessoas que tiverem se cadastrado ganharão um (01) mês de GRAÇA para aproveitarem ao
-                            máximo os serviços de nossos parceiros. </p>
-
-                        <p class="text-large text-thin margin-bottom">Cadastre-se já e aguarde
-                            que logo mais deremos
-                            início ao nosso serviço!</p>
-
-                        <p><img src="img/logoHorizontal.png" alt=""
-                                class="img-circle img-responsive ondra-michal"></p>
-
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-        <br><br><br><br><br>
-    </div>
-    <!-- /.section -->
-
-    <!-- *** Footer ***  -->
-
-    <div class="section" id="footer">
-        <div class="container">
-
-            <div class="row">
-
-                <div class="col-sm-6">
-                    <a href="#intro"> <img src="img/logo-bottom.png" width="216px" height="57px" href="#intro"
-                                           class="img-responsive"></a>
-
-                </div>
-                <div class="col-sm-4">
-                    <p class="social" data-animate="fadeInDown">
-                        contato@cartaourbis.com.br
-
-                        <a href="#" class="external facebook" data-animate-hover="swing" data-animate="fadeInUp"><i
-                                class="fa fa-facebook"></i></a>
-                        <a href="#" class="external instagram" data-animate-hover="swing" data-animate="fadeInUp"><i
-                                class="fa fa-instagram"></i></a>
-
-                    </p>
-                </div>
-
             </div>
         </div>
     </div>

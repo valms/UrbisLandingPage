@@ -48,6 +48,7 @@ $("#buttonParceiro").click(function () {
     $("#inscricaoClienteContainer").hide();
 });
 
+
 //################################### Mascaras #################################################
 //################################### Mascaras #################################################
 //################################### Mascaras #################################################
@@ -206,12 +207,16 @@ $('#inscricaoClienteForm').submit(function (e) {
             message: 'Cadastro Realizado com Sucesso! Obrigado! '
         });
 
+
+        $('#modalCadastro').modal('hide');
+
         document.getElementById("c_name").disabled = true;
         document.getElementById("c_cep").disabled = true;
         document.getElementById("c_email").disabled = true;
         document.getElementById("c_complemento").disabled = true;
         document.getElementById("c_numero").disabled = true;
         document.getElementById("submitButton").disabled = true;
+        document.getElementById("ctaButton").disabled = true;
 
     }
 
@@ -284,12 +289,15 @@ $('#inscricaoParceiroForm').submit(function (e) {
             message: 'Cadastro Realizado com Sucesso! Obrigado!'
         });
 
+        $('#modalCadastro').modal('hide');
+
         document.getElementById("c_nomeRepresentante").disabled = true;
         document.getElementById("c_cepRepresentante").disabled = true;
         document.getElementById("c_emailRepresentante").disabled = true;
         document.getElementById("c_complementoRepresentante").disabled = true;
         document.getElementById("c_numeroRepresentante").disabled = true;
         document.getElementById("submitButtonRepresentante").disabled = true;
+        document.getElementById("ctaButton").disabled = true;
 
     }
 
