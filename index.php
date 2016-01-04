@@ -363,7 +363,6 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
-                            <button type="button" class="btn btn-primary">Inscrever-se</button>
                         </div>
                     </div>
                 </div>
