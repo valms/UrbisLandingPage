@@ -65,13 +65,11 @@
 /* ---------------------------------------------- */
 
 #intro .item h1 {
-    margin-top: -50px;
-    font-size: 28px;
+    font: 700 40px/1.2 Raleway, sans-serif;
     text-transform: uppercase;
-    color: #000;
-    margin-bottom: 40px;
-    opacity: 0;
-    box-shadow: none;
+    letter-spacing: 5px;
+    margin: 5px 0 5px;
+    color: #222;
 }
 
 #intro .item h2 {
@@ -83,33 +81,56 @@
     border-radius: 10px;
 }
 
-#intro .item p {
-    color: #555555;
-    text-align: left;
-    font-size: 22px;
-}
-
-#intro .ctaButton, .submitButton {
-    border-radius: 10px;
-    outline: none;
-}
-
 #intro .item {
     text-shadow: none;
 }
 
 #intro i {
     color: rgba(255, 150, 0, 0.74);
-
 }
 
-#intro .ctaButton {
+/* ---------------------------------------------- /*
+ *  inscrevase
+/* ---------------------------------------------- */
+#inscrevase {
+    height: 100vh;
+}
+
+#inscrevase .lead {
+    color: #555555;
+    text-align: left;
+    font-size: 19px;
+    margin-bottom: 0px;
+}
+
+#inscrevase .sobreNos {
+    margin-left: -10px;
+}
+
+#inscrevase .btn-link {
+    outline: 0;
+}
+
+#inscrevase .ctaButton {
     margin-top: 20px;
 
 }
 
-#intro .btn-link {
-    outline: 0;
+#inscrevase .ctaButton, .submitButton {
+    border-radius: 10px;
+    outline: none;
+}
+
+#inscrevase h2 {
+    margin-top: 100px;
+}
+
+#comoFunciona {
+    height: 100vh;
+}
+
+#footer {
+    height: 100vh;
 }
 
 #footer p.social {
@@ -209,7 +230,7 @@
 /* ---------------------------------------------- */
 
 #preloader {
-    background: #555555;
+    background: #38383d;
     bottom: 0;
     left: 0;
     position: fixed;
@@ -219,13 +240,13 @@
 }
 
 #status {
-    background-image: url(http://qchemlab.org/images/progress_resetpass.gif);
+    background-image: url(../img/urbis.gif);
     background-position: center;
     background-repeat: no-repeat;
     height: 200px;
     left: 50%;
     margin: -100px 0 0 -100px;
-    position: absolute;
+    position:  fixed;
     top: 50%;
     width: 200px;
 }

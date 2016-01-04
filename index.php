@@ -23,8 +23,7 @@
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/bootstrap-dialog.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
-          type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,600,100,800' rel='stylesheet' type='text/css'>
     <link href="css/font-awesome.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/owl.carousel.css" rel="stylesheet">
@@ -80,7 +79,9 @@
             <div class="navbar-collapse collapse" id="navigation">
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#intro">inscreva-se</a>
+                    <li class="active"><a href="#intro">home</a>
+                    </li>
+                    <li><a href="#inscrevase">inscreva-se</a>
                     </li>
                     <li><a href="#comoFunciona">como funciona</a>
                     </li>
@@ -95,7 +96,6 @@
     </div>
     <!-- *** Fim Menu *** -->
 
-
     <!-- *** Seção 01 - Intro da LP ***-->
     <div id="intro" class="clearfix">
         <div class="item">
@@ -104,39 +104,7 @@
                     <h1 data-animate="fadeInDown">Desfrute dos melhores estabelecimentos da
                         cidade com descontos de até 50%!</h1>
                 </div>
-
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="vid">
-                            <iframe class="" src="https://www.youtube.com/embed/o9OIRrMj4Oo" frameborder="0"
-                                    allowfullscreen>
-                            </iframe>
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-6 sobreNos">
-                        <br>
-
-                        <p class="lead margin-bottom texto"> Olá, pessoal! Nós do Urbis convidamos
-                            todos vocês a fazerem do primeiro grupo a desfrutar dessa metrópole de exclusividades.
-                            Nessa fase inicial, todas
-                            as pessoas que tiverem se cadastrado ganharão um (01) mês de GRAÇA para aproveitarem ao
-                            máximo os serviços de nossos parceiros.</p>
-
-                        <p class="lead margin-bottom  "> Cadastre-se já e aguarde que logo mais deremos início ao
-                            nosso
-                            serviço!</p>
-
-                        <button class="btn btn-lg btn-default ctaButton" id="ctaButton" data-toggle="modal"
-                                data-target="#modalCadastro" type="button">
-                            inscreva-se!
-                        </button>
-                        <br><br>
-                    </div>
-                </div>
             </div>
-
 
             <!-- Modal -->
             <div class="modal fade" id="modalCadastro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -370,7 +338,7 @@
 
 
             <div class="scroll-down" role="navigation">
-                <a href="#comoFunciona">
+                <a href="#inscrevase">
                 <span>
                     <i class="fa fa-angle-down fa-2x"></i>
 			    </span>
@@ -380,7 +348,55 @@
     </div>
     <!-- *** Fim da Seção 01 - Intro da LP*** -->
 
-    <!-- *** Seção 02 - Explicação Sobre Urbis *** -->
+    <!-- *** Seção 02 - Inscrição no Urbis *** -->
+    <div class="section" id="inscrevase">
+        <div class="">
+            <div class="container">
+
+                <div class="col-lg-12 col-xs-12 col-sm-12">
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="vid">
+                                <iframe class="" src="https://www.youtube.com/embed/o9OIRrMj4Oo" frameborder="0"
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6 sobreNos">
+                            <p class="lead margin-bottom texto">Ser Urbis é saber aproveitar tudo que a cidade oferece
+                                de
+                                melhor. Genuinamente cearense, o Cartão Urbis veio para propiciar experiências únicas
+                                nos
+                                mais diversos segmentos (gastronomia, estética, entretenimento, serviços em geral,
+                                hotelaria).
+                                <br>
+                                <br>
+                                Nós do Urbis convidamos vocês a fazerem parte do primeiro
+                                grupo que irá desfrutar do nosso serviço. Basta inscrever-se agora e aguardar o contato
+                                da
+                                nossa equipe. Em breve, você poderá testar o Urbis por 01 mês GRÁTIS e aproveitar as
+                                melhores vantagens fornecidas pelos nossos parceiros! :)
+                                <br>
+                                <br>
+                                O Edu já se inscreveu... Faça como ele e venha conhecer também
+                                essa Metrópole de Exclusividades: Urbi-se!!
+                            </p>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-lg btn-default ctaButton" id="ctaButton" data-toggle="modal"
+                        data-target="#modalCadastro" type="button">
+                    inscreva-se!
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- *** Fim da Seção 02 - Inscrição no Urbis *** -->
+
+    <!-- *** Seção 03 - Explicação Sobre Urbis *** -->
     <div class="section  text-gray" id="comoFunciona">
         <div class="container">
 
@@ -388,14 +404,9 @@
 
                 <h2 class="title" data-animate="fadeInDown">Como Funciona</h2>
 
-                <p class="lead margin-bottom" data-animate="fadeInDown">Ser Urbis é saber aproveitar tudo que a cidade
-                    oferece de
-                    melhor. Genuinamente cearense, o Cartão Urbis veio para propiciar experiências únicas nos mais
-                    diversos segmentos. </p>
-
-                <p class="lead margin-bottom" data-animate="fadeInDown">
-                    Faça parte dessa metrópole de exclusividades: Urbi-se!
-                </p>
+                <p class="lead margin-bottom" data-animate="fadeInDown">Em breve, você terá 01 mês Grátis para utilizar
+                    o Cartão Urbis e aproveitar todas as exclusividades que nossos parceiros têm a oferecer.
+                    <br> Enquanto isso, nós já fizemos um passo a passo para você entender melhor como funcionará: </p>
 
                 <div class="row services">
 
@@ -430,67 +441,14 @@
             </div>
         </div>
     </div>
-
-    <!-- *** Fim da Seção 02 - Explicação Sobre Urbis *** -->
+    <!-- *** Fim da Seção 03 - Explicação Sobre Urbis *** -->
 
     <!-- *** Footer ***  -->
-
     <div class="section" id="footer">
         <div class="container">
-            <div class="col-md-12">
-                <br><br><br>
 
-                <h2 class="title" data-animate="fadeInDown">Como Funciona</h2>
-
-                <p class="lead margin-bottom" data-animate="fadeInDown">Ser Urbis é saber aproveitar tudo que a cidade
-                    oferece de
-                    melhor. Genuinamente cearense, o Cartão Urbis veio para propiciar experiências únicas nos mais
-                    diversos segmentos.
-                    <br>
-                    Faça parte dessa metrópole de exclusividades: Urbi-se!
-                </p>
-
-                <div class="row services">
-
-                    <div class="col-md-3"
-
-                         data-animate="fadeInUp">
-                        <img src="img/URBI-SE.png"
-                             style="border-color: #9b9b9b; border-style: solid; border-width: 0px 01px 0px 0px;"
-                             href="#intro" class="img-responsive"/>
-
-                        <h3 class="heading">Cadastre-se</h3>
-
-                    </div>
-
-
-                    <div class="col-md-3" data-animate="fadeInUp">
-                        <img src="img/EXPLORE.png" href="#intro"
-                             style="border-color: #9b9b9b; border-style: solid; border-width: 0px 01px 0px 0px;"
-                             class="img-responsive"/>
-
-                        <h3 class="heading">Procure um estabelecimento parceiro mais próximo de você!</h3>
-                    </div>
-
-
-                    <div class="col-md-3" data-animate="fadeInUp">
-                        <img src="img/APRESENTE-O-CARTAO.png" href="#intro" class="img-responsive"
-                             style="border-color: #9b9b9b; border-style: solid; border-right-width: 10px;
-                              border-width: 0px 01px 0px 0px;"/>
-
-                        <h3 class="heading">Apresente seu Cartão de exclusividades e comemore seu desconto!</h3>
-                    </div>
-
-                    <div class="col-md-3" data-animate="fadeInUp">
-                        <img src="img/DESFRUTE.png" href="#intro" class="img-responsive"/>
-
-                        <h3 class="heading">Desfrute dos Urbis</h3>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
-
     <!-- *** FOOTER END *** -->
 </div>
 
