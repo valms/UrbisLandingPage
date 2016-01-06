@@ -11,29 +11,29 @@ $(window).load(function () {
     $('#status').fadeOut();
     $('#preloader').delay(300).fadeOut('slow');
 });
+/*
+ (function ($) {
+ $('a[href*=#]').bind("click", function (event) {
 
-(function ($) {
-    $('a[href*=#]').bind("click", function (event) {
+ var anchor = $(this);
+ $('html, body').stop().animate({
+ scrollTop: $(anchor.attr('href')).offset().top
+ }, 1000);
+ event.preventDefault();
+ });
 
-        var anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $(anchor.attr('href')).offset().top
-        }, 1000);
-        event.preventDefault();
-    });
-
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-            $('.scroll-up').fadeIn();
-        } else {
-            $('.scroll-up').fadeOut();
-        }
-    });
-
-
-})(jQuery);
+ $(window).scroll(function () {
+ if ($(this).scrollTop() > 100) {
+ $('.scroll-up').fadeIn();
+ } else {
+ $('.scroll-up').fadeOut();
+ }
+ });
 
 
+ })(jQuery);
+
+ */
 var holders = $("#inscricaoParceiroContainer, #inscricaoClienteContainer").hide();
 $("#inscricaoClienteContainer").show();
 $("#inscricaoParceiroContainer").hide();

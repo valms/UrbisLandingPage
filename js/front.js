@@ -89,7 +89,7 @@ function animations() {
  *  =======================================*/
 
 function sliding() {
-    $('.scrollTo, #navigation a').click(function (event) {
+    $('.scrollTo, #navigation a, #cadastroSeta a, #navHeader a').click(function (event) {
         event.preventDefault();
         var full_url = this.href;
         var parts = full_url.split("#");

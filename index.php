@@ -62,7 +62,7 @@
 <!-- *** MENU ***  -->
 <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
     <div class="container">
-        <div class="navbar-header">
+        <div class="navbar-header" id="navHeader">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
@@ -70,7 +70,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a href="#intro">
-                <img src="img/logo.png" href="#intro" class="img-responsive imgLogo"/>
+                <img src="img/logo.png" class="img-responsive imgLogo"/>
             </a>
         </div>
 
@@ -102,7 +102,7 @@
                 <p class="message" data-animate="fadeInUp">Conheça e Urbi-se!</p>
             </div>
 
-            <div class="scroll-down" role="navigation">
+            <div class="scroll-down" role="navigation" id="cadastroSeta">
                 <a href="#cadastro">
                 <span>
                     <i class="fa fa-angle-down fa-2x"></i>
@@ -157,7 +157,7 @@
                     </div>
 
                     <div class="row">
-                        <button class="btn btn-lg btn-default ctaButton" id="ctaButton" data-toggle="modal"
+                        <button class="btn btn-lg  btn-default ctaButton" id="ctaButton" data-toggle="modal"
                                 data-target="#modalCadastro" type="button">
                             inscreva-se!
                         </button>
@@ -422,12 +422,12 @@
     <div class="section text-gray" id="comoFunciona">
         <div class="container">
             <div class="col-md-12">
-                <h2 class="title" data-animate="fadeInDown" style="color: #0f0f0f">Como funciona?</h2>
+                <h2 class="title" data-animate="fadeInDown" style="color: #0f0f0f">Como funciona</h2>
 
 
-                <p class="lead">Em breve, você terá 01 mês Grátis para utilizar o Cartão Urbis e aproveitar todas as
-                    exclusividades que nossos parceiros têm a oferecer. Enquanto isso, nós já fizemos um passo a passo
-                    para você entender melhor como funcionará: </p>
+                <p class="lead">Já se inscreveu no Urbis? Se não, aproveita e corre
+                    lá na aba “Inscreva-se”! Em breve, você terá 01 mês Grátis para aproveitar
+                    todas as exclusividades que nossos parceiros têm a oferecer. Confira o passo a passo que preparamos: </p>
 
                 <p class="lead comoFuncionaLead">Em breve, você terá 01 mês Grátis para utilizar o Cartão Urbis e
                     aproveitar todas as
@@ -439,7 +439,7 @@
                         <div class="">
                             <img src="img/URBI-SE.png" href="#intro" class="img-responsive "/>
                         </div>
-                        <h3 class="heading">Cadastre-se</h3>
+                        <h3 class="heading">Associa-se ao urbis</h3>
 
                         <p style="visibility: hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elite.</p>
                     </div>
@@ -448,7 +448,7 @@
                         <div class="">
                             <img src="img/EXPLORE.png" class="img-responsive "/>
                         </div>
-                        <h3 class="heading">Procure um estabelecimento parceiro mais próximo de você!</h3>
+                        <h3 class="heading">Explore e escolha um estabelecimento parceiro</h3>
 
                         <p style="visibility: hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elite.</p>
                     </div>
@@ -457,8 +457,7 @@
                         <div class="">
                             <img src="img/APRESENTE-O-CARTAO.png" class="img-responsive "/>
                         </div>
-                        <h3 class="heading">Apresente seu Cartão de exclusividades e comemore seu
-                            desconto!</h3>
+                        <h3 class="heading">No estabelecimento, Identifique-se como sócio Urbis</h3>
 
                         <p style="visibility: hidden">Apresente seu Cartão de exclusividades e comemore seu
                             desconto!</p>
@@ -468,7 +467,7 @@
                         <div class="">
                             <img src="img/DESFRUTE.png" class="img-responsive "/>
                         </div>
-                        <h3 class="heading">Desfrute dos Urbis</h3>
+                        <h3 class="heading">Prontinho! Agora é só desfrutar de descontos de até 50%</h3>
 
                         <p style="visibility: hidden">Desfrute dos Urbis.</p>
                     </div>
