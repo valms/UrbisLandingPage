@@ -124,7 +124,7 @@
                         non iaculis eros. Nulla facilisi. Morbi vehicula erat consectetur eros mollis, ut rutrum arcu
                         hendrerit. </p>
 
-                    <div class="row">
+                    <div class="row explicacao">
                         <div class="col-lg-6">
                             <div class="vid">
                                 <iframe class="" src="https://www.youtube.com/embed/o9OIRrMj4Oo" frameborder="0"
@@ -163,36 +163,7 @@
                         </button>
                     </div>
 
-                    <p class="lead cadastroLead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                        non iaculis eros. Nulla facilisi. </p>
 
-                    <div class="row cadastroServices" style="visibility: hidden">
-
-                        <div class="col-md-4" data-animate="fadeInUp">
-                            <div class="icon"><i class="fa fa-home"></i>
-                            </div>
-                            <h3 class="heading">Lorem ipsum</h3>
-
-                            <p>Lorem ipsum </p>
-                        </div>
-
-                        <div class="col-md-4" data-animate="fadeInUp">
-                            <div class="icon"><i class="fa fa-shopping-cart"></i>
-                            </div>
-                            <h3 class="heading">Lorem ipsum</h3>
-
-                            <p>Lorem ipsum </p>
-                        </div>
-
-                        <div class="col-md-4" data-animate="fadeInUp">
-                            <div class="icon"><i class="fa fa-euro"></i>
-                            </div>
-                            <h3 class="heading">Lorem ipsum</h3>
-
-                            <p>Lorem ipsum </p>
-                        </div>
-
-                    </div>
                 </div>
             </div>
         </div>
@@ -536,7 +507,7 @@
 
                 <div class="col-sm-6 email">
                     <h3 data-animate="fadeInDown">Ficou com alguma dúvida? Sugestão? Queremos saber o
-                        quevocê tem a dizer:</h3>
+                        que você tem a dizer:</h3>
 
                     <div class="row">
                         <div class="col-lg-offset-2 col-lg-8">

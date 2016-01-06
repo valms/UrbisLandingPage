@@ -35,7 +35,6 @@
 }
 
 .navbar ul.nav > li > a:hover {
-    border-top: solid 3px #f0592a;
 }
 
 .imgLogo {
@@ -93,6 +92,9 @@
 /* ---------------------------------------------- /*
  * cadastro
 /* ---------------------------------------------- */
+#cadastro {
+    height: 100vh;
+}
 
 #cadastro .texto {
     color: #000;
@@ -123,6 +125,10 @@
     outline: 0;
 }
 
+#cadastro .explicacao {
+    margin-top: -100px;
+}
+
 form {
     margin-left: 4px;
     margin-right: 4px;
@@ -143,11 +149,13 @@ form {
 .ctaButton, .submitButton {
     margin-top: 20px;
     color: #FFF;
-    background-color: #555555;
-    border-color: #ccc;
-    border-width: 2px 2px 2px 2px;
+    background-color: #f05a28;
     border-radius: 10px;
     outline: 0;
+}
+
+.ctaButton {
+    box-shadow: 3px 3px 20px #888888;
 }
 
 .formContainerCliente {
@@ -159,7 +167,7 @@ form {
 
 .formContainerParceiro {
     border-style: solid;
-    border-color: #d8e02a;
+    border-color: #d6df23;
     border-radius: 10px;
     border-width: 2px 2px 2px 2px;
 }
@@ -185,8 +193,34 @@ form {
  * comoFunciona
 /* ---------------------------------------------- */
 
+#comoFunciona {
+    height: 100vh;
+}
+
 #comoFunciona .comoFuncionaLead {
     visibility: hidden;
+}
+
+#comoFunciona .lead {
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.services {
+    margin-top: 45px;
+    text-align: center;
+}
+
+.section h2.title {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 900;
+    padding: 4px 0;
+    margin-bottom: 13px;
+    margin-top: -25px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 
 @media only screen and (max-width: 1280px) {
@@ -199,7 +233,7 @@ form {
 @media (min-width: 767px) {
     .col-md-3:not(:last-child) {
         border-right: 1px solid #cccccc;
-        height: 500px;
+        height: 400px;
     }
 
 }
@@ -209,7 +243,7 @@ form {
 /* ---------------------------------------------- */
 
 #footer {
-
+    height: 100vh;
 }
 
 #footer h3, h2, h4 {
@@ -232,7 +266,7 @@ form {
 }
 
 #footer .logoFooter {
-    left:50%;
+    left: 50%;
 }
 
 #footer .divisaoLinhas {
