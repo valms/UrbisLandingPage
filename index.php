@@ -427,7 +427,7 @@
 
 
                 <p class="lead">Já se inscreveu no Urbis? Se não, aproveita e corre
-                    lá na aba “Inscreva-se”! Em breve, você terá <strong>01 mês Grátis</strong> para aproveitar
+                    lá na aba “Inscreva-se”! Em breve, você terá <strong>01 mês GRÁTIS</strong> para aproveitar
                     todas as exclusividades que nossos parceiros têm a oferecer. Confira o passo a passo que preparamos:
                 </p>
 
