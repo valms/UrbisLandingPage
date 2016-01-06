@@ -549,26 +549,21 @@
                         <h4 data-animate="fadeInDown">contato@cartaourbis.com.br</h4>
                     </div>
 
-
                 </div>
             </div>
         </div>
-        <div class="row">
-            <br>
-            <img data-animate="fadeInDown" class="divisaoLinhas" src="img/lines.png"/>
-        </div>
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <br>
-                <img class="footerLogo" data-animate="fadeInDown" src="img/logo2.png"/>
+
+        <div class="container">
+            <div class="row"></div>
+            <div class="row">
+                <div class="span4"><img class="divisaoLinhas" src="img/lines.png"/></div>
+
             </div>
-
+            <div class="row">
+                <div class="span4"><img class="center-block img-responsive logoFooter" src="img/logo2.png"/></div>
+            </div>
         </div>
-
-
     </div>
-
-
 </div>
 
 
