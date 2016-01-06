@@ -145,7 +145,8 @@
                                 Nós do Urbis convidamos vocês a fazerem parte do primeiro
                                 grupo que irá desfrutar do nosso serviço. Basta inscrever-se agora e aguardar o contato
                                 da
-                                nossa equipe. Em breve, você poderá testar o Urbis por 01 mês GRÁTIS e aproveitar as
+                                nossa equipe. Em breve, você poderá testar o Urbis por <strong>01 mês GRÁTIS</strong> e
+                                aproveitar as
                                 melhores vantagens fornecidas pelos nossos parceiros! :)
                                 <br>
                                 <br>
@@ -426,8 +427,9 @@
 
 
                 <p class="lead">Já se inscreveu no Urbis? Se não, aproveita e corre
-                    lá na aba “Inscreva-se”! Em breve, você terá 01 mês Grátis para aproveitar
-                    todas as exclusividades que nossos parceiros têm a oferecer. Confira o passo a passo que preparamos: </p>
+                    lá na aba “Inscreva-se”! Em breve, você terá <strong>01 mês Grátis</strong> para aproveitar
+                    todas as exclusividades que nossos parceiros têm a oferecer. Confira o passo a passo que preparamos:
+                </p>
 
                 <p class="lead comoFuncionaLead">Em breve, você terá 01 mês Grátis para utilizar o Cartão Urbis e
                     aproveitar todas as
