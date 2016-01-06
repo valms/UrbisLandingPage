@@ -91,10 +91,12 @@
 /* ---------------------------------------------- */
 
 #cadastro .texto {
-    color: #2f2f2f;
+    color: #000;
     text-align: left;
     font-size: 19px;
     margin-bottom: 0px;
+    font-weight: 300;
+    font-size: 18px;
 }
 
 #cadastro .vid {
@@ -164,11 +166,6 @@ form {
     margin-right: 1px;
 }
 
-p.lead {
-    font-size: 22px;
-    font-weight: 300;
-}
-
 @media only screen and (max-width: 1000px) {
 
     #cadastro .cadastroLead {
@@ -234,7 +231,6 @@ p.lead {
     border-right: 1px solid #555555;
 }
 
-
 @media only screen and (max-width: 1000px) {
 
     #footer .footerLogo {
@@ -242,8 +238,6 @@ p.lead {
     }
 
 }
-
-
 
 /* ---------------------------------------------- /*
  * scroll-down
