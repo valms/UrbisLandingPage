@@ -34,6 +34,10 @@
     outline: 0;
 }
 
+.navbar ul.nav > li > a:hover {
+    border-top: solid 3px #f0592a;
+}
+
 .imgLogo {
     width: 70%;
     height: 50%;
