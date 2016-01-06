@@ -208,15 +208,19 @@
 
                     <div class="row">
                         <div class="col-lg-6">
-                            <button class="btn btn-link" id="buttonCliente">
-                                <img src="img/clientes-label.png"/>
-                            </button>
+                            <div class="col-md-8 col-md-offset-2">
+                                <button class="btn btn-link" id="buttonCliente">
+                                    <img src="img/clientes-label.png"/>
+                                </button>
+                            </div>
                         </div>
 
                         <div class="col-lg-6">
-                            <button class="btn btn-link" id="buttonParceiro">
-                                <img src="img/parceiros-label.png"/>
-                            </button>
+                            <div class="col-md-8 col-md-offset-2">
+                                <button class="btn btn-link" id="buttonParceiro">
+                                    <img src="img/parceiros-label.png"/>
+                                </button>
+                            </div>
                         </div>
                     </div>
 
@@ -518,7 +522,7 @@
 
                     <div class="row">
                         <div class="col-lg-offset-2 col-lg-8">
-                            <a href="http://www.google.com"><img  src="img/face.png" data-animate="fadeInDown"></a>
+                            <a href="http://www.google.com"><img src="img/face.png" data-animate="fadeInDown"></a>
                         </div>
                     </div>
                     <br>
@@ -556,7 +560,7 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <br>
-                <img data-animate="fadeInDown" src="img/logo2.png"/>
+                <img class="footerLogo" data-animate="fadeInDown" src="img/logo2.png"/>
             </div>
 
         </div>

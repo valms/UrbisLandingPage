@@ -91,7 +91,7 @@
 /* ---------------------------------------------- */
 
 #cadastro .texto {
-    color: #555555;
+    color: #2f2f2f;
     text-align: left;
     font-size: 19px;
     margin-bottom: 0px;
@@ -115,6 +115,11 @@
 
 #cadastro .btn-link {
     outline: 0;
+}
+
+form {
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
 #cadastro .cadastroTitulo {
@@ -155,6 +160,13 @@
 
 .form-control {
     border-radius: 10px;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+p.lead {
+    font-size: 22px;
+    font-weight: 300;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -176,16 +188,19 @@
     visibility: hidden;
 }
 
-.col-md-3:not(:last-child) {
-    border-right: 1px solid #cccccc;
-    height: 500px;
-}
-
 @media only screen and (max-width: 1280px) {
 
     #comoFunciona .comoFuncionaLead {
         display: none;
     }
+}
+
+@media (min-width: 767px) {
+    .col-md-3:not(:last-child) {
+        border-right: 1px solid #cccccc;
+        height: 500px;
+    }
+
 }
 
 /* ---------------------------------------------- /*
@@ -212,12 +227,23 @@
 }
 
 #footer .divisaoLinhas {
-    width:100%;
+    width: 100%;
 }
 
 #footer .col-sm-6:not(:last-child) {
     border-right: 1px solid #555555;
 }
+
+
+@media only screen and (max-width: 1000px) {
+
+    #footer .footerLogo {
+        width: 58%;
+    }
+
+}
+
+
 
 /* ---------------------------------------------- /*
  * scroll-down
