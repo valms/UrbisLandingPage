@@ -29,7 +29,7 @@ $(window).resize(function () {
 
 
 /* =========================================
- * sliders 
+ * sliders
  *  =======================================*/
 
 function sliders() {
@@ -85,7 +85,7 @@ function animations() {
 }
 
 /* =========================================
- * sliding 
+ * sliding
  *  =======================================*/
 
 function sliding() {
@@ -101,7 +101,7 @@ function sliding() {
 }
 
 /* =========================================
- * full screen intro 
+ * full screen intro
  *  =======================================*/
 
 function fullScreenContainer() {
@@ -116,10 +116,13 @@ function fullScreenContainer() {
     }
 
 
-    $("#intro, #intro .item").css({
+    $("#intro, #intro .item ").css({
         width: screenWidth,
         height: screenHeight
     });
+
+
+
 }
 
 

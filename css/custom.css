@@ -1,15 +1,142 @@
+/* ---------------------------------------------- /*
+ * Preloader
+/* ---------------------------------------------- */
+
+#preloader {
+    background: #38383d;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+#status {
+    background-image: url(../img/urbis.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    left: 50%;
+    margin: -100px 0 0 -100px;
+    position: fixed;
+    top: 50%;
+    width: 200px;
+}
+
+/* ---------------------------------------------- /*
+ * navbar
+/* ---------------------------------------------- */
+
 .navbar, navbar-default {
     background-color: #f2f2f2;
     margin-bottom: 0px;
     outline: 0;
 }
 
-.divForm {
-    border-style: solid;
-    border-color: #1BAA9C;
-    border-radius: 25px;
-    margin-right: 10px;
+.imgLogo {
+    width: 70%;
+    height: 50%;
+}
 
+@media only screen and (max-width: 1000px) {
+
+    .imgLogo {
+        width: 77%;
+        height: 25%;;
+    }
+}
+
+/* ---------------------------------------------- /*
+ * intro
+/* ---------------------------------------------- */
+
+#intro .item h1 {
+    color: #000;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    margin-bottom: 40px;
+    opacity: 0;
+    text-transform: uppercase;
+    font-family: "Raleway";
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+#intro .item p {
+    color: #404040 !important;
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    #intro .item h1 {
+        color: #000;
+        font-size: 27px;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+        margin-bottom: 40px;
+        opacity: 0;
+        text-transform: uppercase;
+        font-family: "Raleway";
+    }
+
+    #intro .item p {
+        color: #ffffff !important;
+    }
+}
+
+/* ---------------------------------------------- /*
+ * cadastro
+/* ---------------------------------------------- */
+
+#cadastro .texto {
+    color: #555555;
+    text-align: left;
+    font-size: 19px;
+    margin-bottom: 0px;
+}
+
+#cadastro .vid {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+#cadastro .vid iframe, .vid object, .vid embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#cadastro .btn-link {
+    outline: 0;
+}
+
+#cadastro .cadastroTitulo {
+    visibility: hidden;
+}
+
+#cadastro .cadastroLead {
+    visibility: hidden;
+}
+
+#cadastro .cadastroServices {
+    visibility: hidden;
+}
+
+.ctaButton, .submitButton {
+    margin-top: 20px;
+    color: #FFF;
+    background-color: #555555;
+    border-color: #ccc;
+    border-width: 2px 2px 2px 2px;
+    border-radius: 10px;
+    outline: 0;
 }
 
 .formContainerCliente {
@@ -26,130 +153,84 @@
     border-width: 2px 2px 2px 2px;
 }
 
-.btn-default {
-    color: #FFF;
-    background-color: #555555;
-    border-color: #ccc;
+.form-control {
+    border-radius: 10px;
 }
 
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-    color: #1AAA9B;
-    background-color: transparent;
-    outline: 0;
-}
+@media only screen and (max-width: 1000px) {
 
-.vid {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
+    #cadastro .cadastroLead {
+        display: none;
+    }
 
-}
-
-.vid iframe,
-.vid object,
-.vid embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
+    #cadastro .cadastroServices {
+        display: none;
+    }
 }
 
 /* ---------------------------------------------- /*
- *  Intro
+ * comoFunciona
 /* ---------------------------------------------- */
 
-#intro .item h1 {
-    font: 700 40px/1.2 Raleway, sans-serif;
+#comoFunciona .comoFuncionaLead {
+    visibility: hidden;
+}
+
+.col-md-3:not(:last-child) {
+    border-right: 1px solid #cccccc;
+    height: 500px;
+}
+
+@media only screen and (max-width: 1280px) {
+
+    #comoFunciona .comoFuncionaLead {
+        display: none;
+    }
+}
+
+/* ---------------------------------------------- /*
+ * footer
+/* ---------------------------------------------- */
+
+#footer h3, h2, h4 {
+    color: white;
     text-transform: uppercase;
-    letter-spacing: 5px;
-    margin: 5px 0 5px;
-    color: #222;
 }
 
-#intro .item h2 {
-    color: #555555;
+#footer h2 {
+    font-size: 45px;
+}
+
+#footer h4 {
     font-size: 20px;
+    color: #d8e02a;
 }
 
-#intro .form-control {
-    border-radius: 10px;
+#footer .faceIco {
+    width: 50%;
+    height: 50%;
 }
 
-#intro .item {
-    text-shadow: none;
+#footer .divisaoLinhas {
+    width:100%;
 }
 
-#intro i {
-    color: rgba(255, 150, 0, 0.74);
-}
-
-/* ---------------------------------------------- /*
- *  inscrevase
-/* ---------------------------------------------- */
-#inscrevase {
-    height: 100vh;
-}
-
-#inscrevase .lead {
-    color: #555555;
-    text-align: left;
-    font-size: 19px;
-    margin-bottom: 0px;
-}
-
-#inscrevase .sobreNos {
-    margin-left: -10px;
-}
-
-#inscrevase .btn-link {
-    outline: 0;
-}
-
-#inscrevase .ctaButton {
-    margin-top: 20px;
-
-}
-
-#inscrevase .ctaButton, .submitButton {
-    border-radius: 10px;
-    outline: none;
-}
-
-#inscrevase h2 {
-    margin-top: 100px;
-}
-
-#comoFunciona {
-    height: 100vh;
-}
-
-#footer {
-    height: 100vh;
-}
-
-#footer p.social {
-    text-align: center;
+#footer .col-sm-6:not(:last-child) {
+    border-right: 1px solid #555555;
 }
 
 /* ---------------------------------------------- /*
- *Scroll Down
+ * scroll-down
 /* ---------------------------------------------- */
-
 .scroll-down {
     position: absolute;
     left: 50%;
     bottom: 40px;
-    border: 2px solid #fff;
+    border: 2.5px solid #fff;
     border-radius: 50%;
     height: 50px;
     width: 50px;
-    margin-left: -15px;
+    margin-left: -25px;
     display: block;
     z-index: 10;
     text-align: center;
@@ -172,23 +253,8 @@
     animation-play-state: running;
 }
 
-@media only screen and (max-width: 1000px) {
-
-    .lead {
-        color: #404040 !important;
-        opacity: 1 !important;
-    }
-
-    .sobreNos {
-        border-style: solid;
-        border-radius: 10px;
-        border-width: 2px 2px 2px 2px;
-        background-color: #fffffb;
-        margin-top: 1em;
-        opacity: .9;
-
-    }
-
+.scroll-down i {
+    color: rgba(255, 150, 0, 0.74);
 }
 
 @-webkit-keyframes drop {
@@ -221,33 +287,78 @@
     }
 }
 
-.form-control-feedback {
-    width: 50px;
+@media only screen and (max-width: 1000px) {
+
+    .scroll-down {
+        position: absolute;
+        left: 50%;
+        bottom: 55px;
+        border: 2.5px solid #fff;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        margin-left: -25px;
+        display: block;
+        z-index: 10;
+        text-align: center;
+    }
+
+    .scroll-down span {
+        position: relative;
+        color: #fff;
+        -webkit-animation-name: drop;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-delay: 0s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-play-state: running;
+        animation-name: drop;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+    }
+
+    .scroll-down i {
+        color: rgba(255, 150, 0, 0.74);
+    }
+
+    sc
+
+    @-webkit-keyframes drop {
+        0% {
+            top: 0px;
+            opacity: 0;
+        }
+        30% {
+            top: 10px;
+            opacity: 1;
+        }
+        100% {
+            top: 25px;
+            opacity: 0;
+        }
+    }
+
+    @keyframes drop {
+        0% {
+            top: 0px;
+            opacity: 0;
+        }
+        30% {
+            top: 10px;
+            opacity: 1;
+        }
+        100% {
+            top: 25px;
+            opacity: 0;
+        }
+    }
 }
 
-/* ---------------------------------------------- /*
- * Preloader
-/* ---------------------------------------------- */
-
-#preloader {
-    background: #38383d;
-    bottom: 0;
-    left: 0;
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 9999;
+.divider-vertical {
+    height: 40px;
+    margin: 0 9px;
+    border-left: 1px solid #f2f2f2;
 }
-
-#status {
-    background-image: url(../img/urbis.gif);
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 200px;
-    left: 50%;
-    margin: -100px 0 0 -100px;
-    position:  fixed;
-    top: 50%;
-    width: 200px;
-}
-

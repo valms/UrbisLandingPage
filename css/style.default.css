@@ -1,10 +1,13 @@
+/*
 
+=====================
+BODY, HTML
+=====================
+
+*/
 body {
     font-weight: 400;
-
 }
-
-
 
 html,
 body,
@@ -16,7 +19,7 @@ body,
 /*
 
 =====================
-Barra de Navegação
+NAVBAR
 =====================
 
 */
@@ -33,7 +36,7 @@ Barra de Navegação
 }
 
 .navbar ul.nav > li > a:hover {
-    border-top: solid 3px #1BAA9C;
+    border-top: solid 3px #6aae7a;
 }
 
 @media (max-width: 767px) {
@@ -45,7 +48,7 @@ Barra de Navegação
 .navbar ul.nav > li.active > a,
 .navbar ul.nav > li.open > a {
     text-decoration: none !important;
-    border-top: solid 3px #F0592A;
+    border-top: solid 3px #6aae7a;
 }
 
 @media (max-width: 767px) {
@@ -53,10 +56,6 @@ Barra de Navegação
     .navbar ul.nav > li.open > a {
         border-top: solid 3px transparent;
     }
-}
-
-.logoImg {
-
 }
 
 /*
@@ -179,7 +178,7 @@ UNIVERSAL SECTION STYLES
 }
 
 .text-parallax.parallax-image1 {
-    background: url('../img/bg.jpg') center center no-repeat fixed;
+    background: url('../img/parallax.jpg') center center no-repeat fixed;
 }
 
 @media (max-width: 991px) {
@@ -231,7 +230,6 @@ INTRO
     padding-top: 200px;
     padding-bottom: 120px;
     text-align: center;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 
 #intro .item .btn {
@@ -313,11 +311,11 @@ INTRO
     margin-top: -calc(50%);
 }
 
-/*
 #intro .item alert {
-  text-shadow: none;
+    text-shadow: none;
 }
 
+/*
 
 =====================
 SERVICES
@@ -954,12 +952,12 @@ strong {
 }
 
 .navbar-default {
-    background-color: transparent;
-    border-color: transparent;
+    background-color: #ffffff;
+    border-bottom-color: #e6e6e6;
 }
 
 .navbar-default .navbar-brand {
-    color: #1AAA9B;
+    color: #6aae7a;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -978,14 +976,14 @@ strong {
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: #2AB472;
+    color: #333333;
     background-color: transparent;
 }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-    color: #ffffff;
+    color: #555555;
     background-color: transparent;
 }
 
@@ -1398,8 +1396,8 @@ h6,
 .h4,
 .h5,
 .h6 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
     line-height: 1.1;
     color: inherit;
 }
